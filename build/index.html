@@ -1,805 +1,1137 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calvin Does CS</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
-    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
-    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_package_v0.16/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_package_v0.16/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_package_v0.16/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon_package_v0.16/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="/node_modules/particles.js/particles.js"></script>
     <script>
-        particlesJS.load(
-            "particles-js",
-            "/build/assets/particlesjs-config.json",
-            function () {
-                console.log("callback - particles.js config loaded");
-            },
-        );
+      particlesJS.load(
+        "particles-js",
+        "/build/assets/particlesjs-config.json",
+        function () {
+          console.log("callback - particles.js config loaded");
+        },
+      );
     </script>
-</head>
+  </head>
 
-<body class="relative overflow-x-hidden bg-white">
+  <body class="relative overflow-x-hidden bg-white">
     <!-- NAV BAR  -->
     <nav class="sticky inset-0 z-10">
-        <div class="bg-white shadow-md shadow-gray-400">
-            <div class="px-10 mx-auto max-w-7xl">
-                <div class="flex justify-between">
-                    <a class="flex items-center py-2">
-                        <img src="assets/pictures/logo.png" class="w-16 h-16 rounded-full">
-                        <div class="pl-2 text-xl font-bold">CalvinDoesCS</div>
-                    </a>
-                    <ul class="items-center hidden py-5 space-x-5 text-lg font-bold tracking-wider lg:flex">
-                        <li><a href="#home" class="nav-btn active">Home</a></li>
-                        <li><a href="#about" class="nav-btn">About</a></li>
-                        <li><a href="#skills" class="nav-btn">Skills</a></li>
-                        <li><a href="#education" class="nav-btn">Education</a></li>
-                        <li><a href="#projects" class="nav-btn">Projects</a></li>
-                        <li><a href="#experience" class="nav-btn">Experience</a></li>
-                        <li><a href="#contact" class="nav-btn">Contact</a></li>
-                    </ul>
-                    <!-- mobile menu -->
-                    <div class="flex items-center justify-center lg:hidden">
-                        <svg class="w-5 h-5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 18L20 18" stroke="#000000" stroke-width="3" stroke-linecap="round" />
-                            <path d="M4 12L20 12" stroke="#000000" stroke-width="3" stroke-linecap="round" />
-                            <path d="M4 6L20 6" stroke="#000000" stroke-width="3" stroke-linecap="round" />
-                        </svg>
-                    </div>
-
-                </div>
+      <div class="bg-white shadow-md shadow-gray-400">
+        <div class="px-10 mx-auto max-w-7xl">
+          <div class="flex justify-between">
+            <a class="flex items-center py-2">
+              <img
+                src="assets/pictures/logo.png"
+                class="w-16 h-16 rounded-full"
+              />
+              <div class="pl-2 text-xl font-bold">CalvinDoesCS</div>
+            </a>
+            <ul
+              class="items-center hidden py-5 space-x-5 text-lg font-bold tracking-wider lg:flex"
+            >
+              <li><a href="#home" class="nav-btn active">Home</a></li>
+              <li><a href="#about" class="nav-btn">About</a></li>
+              <li><a href="#skills" class="nav-btn">Skills</a></li>
+              <li><a href="#education" class="nav-btn">Education</a></li>
+              <li><a href="#projects" class="nav-btn">Projects</a></li>
+              <li><a href="#experience" class="nav-btn">Experience</a></li>
+              <li><a href="#contact" class="nav-btn">Contact</a></li>
+            </ul>
+            <!-- mobile menu -->
+            <div class="flex items-center justify-center lg:hidden">
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 18L20 18"
+                  stroke="#000000"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M4 12L20 12"
+                  stroke="#000000"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M4 6L20 6"
+                  stroke="#000000"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
             </div>
+          </div>
         </div>
+      </div>
     </nav>
     <!--  Home Section -->
     <section id="home" class="section">
-        <div class="relative min-h-screen">
-            <div id="particles-js" class="absolute inset-0 bg-gray-100">
-            </div>
-            <div class="absolute inset-0 w-full font-bold lg:top-1/3">
-                <div class="flex flex-col-reverse items-center mt-10 justify-evenly lg:mt-0 lg:flex-row">
-                    <!-- Introudction Header -->
-                    <div class="flex-col">
-                        <h2 class="text-6xl text-bold animate-slide_right md:animate-slide_down ">Hi There,</h2>
-                        <div class="flex mt-3 space-x-2 text-6xl text-bold">
-                            <h2 class="animate-slide_right">I'm Calvin </h2>
-                            <span class="text-blue-700 animate-slide_left ">Tran</span>
-                        </div>
+      <div class="relative min-h-screen">
+        <div id="particles-js" class="absolute inset-0 bg-gray-100"></div>
+        <div class="absolute inset-0 w-full font-bold lg:top-1/3">
+          <div
+            class="flex flex-col-reverse items-center mt-10 justify-evenly lg:mt-0 lg:flex-row"
+          >
+            <!-- Introudction Header -->
+            <div class="flex-col">
+              <h2
+                class="text-6xl text-bold animate-slide_right md:animate-slide_down"
+              >
+                Hi There,
+              </h2>
+              <div class="flex mt-3 space-x-2 text-6xl text-bold">
+                <h2 class="animate-slide_right">I'm Calvin</h2>
+                <span class="text-blue-700 animate-slide_left">Tran</span>
+              </div>
 
-                        <p class="py-4 text-3xl text-bold"> I Am Into <span id="job-text" class="text-red-500 ">
-                            </span><span class="text-red-500">|</span>
-
-                        </p>
-                        <script src="animationTyper.js"></script>
-                        <button
-                            class="px-10 py-3 text-lg text-white bg-blue-900 rounded-full shadow-lg shadow-blue-800 hover:bg-blue-950"
-                            onclick="location.href = '#about'">
-                            <div class="flex items-center space-x-2">
-                                <p>About Me</p>
-                                <svg class="w-5 h-5 mt-1 animate-bounce" fill="#FFFFFF" version="1.1" id="Layer_1"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    viewBox="0 0 512 512" xml:space="preserve">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <g>
-                                            <g>
-                                                <g>
-                                                    <path
-                                                        d="M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z M256,469.333 c-117.818,0-213.333-95.515-213.333-213.333S138.182,42.667,256,42.667S469.333,138.182,469.333,256S373.818,469.333,256,469.333 z">
-                                                    </path>
-                                                    <path
-                                                        d="M347.582,198.248L256,289.83l-91.582-91.582c-8.331-8.331-21.839-8.331-30.17,0c-8.331,8.331-8.331,21.839,0,30.17 l106.667,106.667c8.331,8.331,21.839,8.331,30.17,0l106.667-106.667c8.331-8.331,8.331-21.839,0-30.17 C369.42,189.917,355.913,189.917,347.582,198.248z">
-                                                    </path>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
-                        </button>
-                        <div class="flex my-5 space-x-2">
-                            <div class="w-10 h-10 p-2 rounded-full bg-blue-950 hover:bg-blue-300">
-                                <a href="https://www.linkedin.com/in/calvin-tran-cs/">
-                                    <img src="assets/linkedin-logo.png" class="">
-                                </a>
-
-                            </div>
-                            <div class="w-10 h-10 p-2 rounded-full bg-blue-950 hover:bg-blue-300">
-                                <a href="https://github.com/CalvinDoesCS"><img src="assets/github-logo.png"
-                                        class=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Rounded Picture -->
-                    <img src="assets/pictures/cartoon_me.JPG"
-                        class="object-cover rounded-full shadow-lg h-80 max-h-80 mb-2 md:mb-0 md:h-96 md:max-h-96 shadow-[#6F8FAF]">
+              <p class="py-4 text-3xl text-bold">
+                I Am Into <span id="job-text" class="text-red-500"> </span
+                ><span class="text-red-500">|</span>
+              </p>
+              <script src="animationTyper.js"></script>
+              <button
+                class="px-10 py-3 text-lg text-white bg-blue-900 rounded-full shadow-lg shadow-blue-800 hover:bg-blue-950"
+                onclick="location.href = '#about'"
+              >
+                <div class="flex items-center space-x-2">
+                  <p>About Me</p>
+                  <svg
+                    class="w-5 h-5 mt-1 animate-bounce"
+                    fill="#FFFFFF"
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g>
+                        <g>
+                          <g>
+                            <path
+                              d="M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z M256,469.333 c-117.818,0-213.333-95.515-213.333-213.333S138.182,42.667,256,42.667S469.333,138.182,469.333,256S373.818,469.333,256,469.333 z"
+                            ></path>
+                            <path
+                              d="M347.582,198.248L256,289.83l-91.582-91.582c-8.331-8.331-21.839-8.331-30.17,0c-8.331,8.331-8.331,21.839,0,30.17 l106.667,106.667c8.331,8.331,21.839,8.331,30.17,0l106.667-106.667c8.331-8.331,8.331-21.839,0-30.17 C369.42,189.917,355.913,189.917,347.582,198.248z"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
                 </div>
+              </button>
+              <div class="flex my-5 space-x-2">
+                <div
+                  class="w-10 h-10 p-2 rounded-full bg-blue-950 hover:bg-blue-300"
+                >
+                  <a href="https://www.linkedin.com/in/calvin-tran-cs/">
+                    <img src="assets/linkedin-logo.png" class="" />
+                  </a>
+                </div>
+                <div
+                  class="w-10 h-10 p-2 rounded-full bg-blue-950 hover:bg-blue-300"
+                >
+                  <a href="https://github.com/CalvinDoesCS"
+                    ><img src="assets/github-logo.png" class=""
+                  /></a>
+                </div>
+              </div>
             </div>
+            <!-- Rounded Picture -->
+            <img
+              src="assets/pictures/cartoon_me.JPG"
+              class="object-cover rounded-full shadow-lg h-80 max-h-80 mb-2 md:mb-0 md:h-96 md:max-h-96 shadow-[#6F8FAF]"
+            />
+          </div>
         </div>
-
-
+      </div>
     </section>
     <!--  About Me Section  -->
     <section id="about" class="min-h-screen section">
-        <div class="flex justify-center pt-3 space-x-2">
-            <svg class="h-10 w-15" fill="#000000" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                    <path
-                        d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z">
-                    </path>
-                </g>
-            </svg>
-            <h2 class="text-4xl font-bold">About <span class="text-purple-500">Me</span></h2>
-        </div>
-        <div class="py-10 mx-10 md:py-28">
-            <div class="flex flex-col md:space-x-10 lg:space-x-28 md:flex-row">
-                <div class="">
-                    <img src="/build/assets/pictures/me.png" class="w-3/4 mx-auto mb-3 rounded-md shadow-lg">
-                </div>
-                <div class="flex flex-col mr-20 md:mr-0 md:text-left ">
-                    <h3 class="text-2xl font-bold">I'm Calvin</h3>
-                    <p class="text-base font-bold">Recent Graduate Software Enginneer</p>
-                    <p class="py-5 text-md">
-                        I am a recent Computer Science graduate from Georgia State University with a
-                        passion for
-                        coding. My journey in software development has exposed me to a variety of
-                        technologies, and I've
-                        gained hands-on experience building React applications and a full-stack website
-                        using React,
-                        Spring Boot, and MySQL. Beyond academics, my commitment to continuous learning
-                        drives me to seek
-                        new challenges, and my diverse portfolio reflects my dedication to innovation.
-                        Armed with a
-                        solid foundation in Computer Science and a love for problem-solving, I am eager
-                        to embrace fresh
-                        opportunities and contribute positively to the field of software engineering.
-                    </p>
-                    <div class="text-blue-500">Email: <span class="text-black">CalvinNTran.cs@gmail.com</span></div>
-                    <div class="text-blue-500">Location: <span class="text-black">Atlanta,
-                            Georgia</span></div>
-                    <div>
-                        <button
-                            class="px-8 py-3 mt-5 text-lg text-white bg-blue-900 rounded-lg shadow-md shadow-blue-800">
-                            <div class="flex items-center space-x-1">
-                                <p>Resume</p>
-                                <svg fill="#FFFFFF" class="w-3 h-3" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
-                                    xml:space="preserve">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <path id="XMLID_222_"
-                                            d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z">
-                                        </path>
-                                    </g>
-                                </svg>
-
-                            </div>
-
-                        </button>
-                    </div>
-
-                </div>
+      <div class="flex justify-center pt-3 space-x-2">
+        <svg
+          class="h-10 w-15"
+          fill="#000000"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"
+            ></path>
+          </g>
+        </svg>
+        <h2 class="text-4xl font-bold">
+          About <span class="text-purple-500">Me</span>
+        </h2>
+      </div>
+      <div class="py-10 mx-10 md:py-28">
+        <div class="flex flex-col md:space-x-10 lg:space-x-28 md:flex-row">
+          <div class="">
+            <img
+              src="/build/assets/pictures/me.png"
+              class="w-3/4 mx-auto mb-3 rounded-md shadow-lg"
+            />
+          </div>
+          <div class="flex flex-col mr-20 md:mr-0 md:text-left">
+            <h3 class="text-2xl font-bold">I'm Calvin</h3>
+            <p class="text-base font-bold">
+              Recent Graduate Software Enginneer
+            </p>
+            <p class="py-5 text-md">
+              I am a recent Computer Science graduate from Georgia State
+              University with a passion for coding. My journey in software
+              development has exposed me to a variety of technologies, and I've
+              gained hands-on experience building React applications and a
+              full-stack website using React, Spring Boot, and MySQL. Beyond
+              academics, my commitment to continuous learning drives me to seek
+              new challenges, and my diverse portfolio reflects my dedication to
+              innovation. Armed with a solid foundation in Computer Science and
+              a love for problem-solving, I am eager to embrace fresh
+              opportunities and contribute positively to the field of software
+              engineering.
+            </p>
+            <div class="text-blue-500">
+              Email: <span class="text-black">CalvinNTran.cs@gmail.com</span>
             </div>
+            <div class="text-blue-500">
+              Location: <span class="text-black">Atlanta, Georgia</span>
+            </div>
+            <div>
+              <button
+                class="px-8 py-3 mt-5 text-lg text-white bg-blue-900 rounded-lg shadow-md shadow-blue-800"
+              >
+                <div class="flex items-center space-x-1">
+                  <p>Resume</p>
+                  <svg
+                    fill="#FFFFFF"
+                    class="w-3 h-3"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 330 330"
+                    xml:space="preserve"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        id="XMLID_222_"
+                        d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--  Skills Section  -->
-    <section id="skills" class="min-h-screen text-white bg-gradient-to-b from-blue-500 to-cyan-300 section">
-        <div class="flex justify-center pt-3 space-x-2">
-            <svg class="w-10 h-10" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#FFFFFF">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                    <g>
-                        <path class="st0"
-                            d="M448.559,141.251c-5.14-5.954-10.584-11.578-16.253-16.942c-0.268-0.286-0.546-0.554-0.842-0.823 c-43.419-40.653-101.748-63.988-168.95-68.062c-6.868-0.429-13.7-0.618-20.407-0.618c-74.786-0.017-141.836,25.252-187.96,72.226 c-16.396,16.7-29.952,34.644-39.408,54.666c-9.465,19.995-14.703,42.058-14.686,66.182c0,0.045,0.009,0.098,0.009,0.143 C0.054,248.219,0,248.407,0,248.604c0,0.402,0.09,0.788,0.116,1.182c0.081,7.262,0.573,14.676,1.586,22.314l0.054,0.403l0.08,0.412 c2.732,13.843,6.242,26.648,14.023,38.074c5.803,8.524,14.005,15.76,24.392,21.159c15.652,8.14,35.925,12.85,64.408,15.912 c16.978,1.808,37.017,2.946,60.684,3.591c0.053,0,0.107,0.017,0.162,0.017c0.026,0,0.062-0.009,0.089-0.009 c15.993,0.43,33.588,0.646,53.198,0.646c44.109-0.028,72.494,3.976,90.25,9.742c8.489,2.757,14.479,5.784,18.966,8.927 c0.251,0.188,0.492,0.385,0.761,0.564c2.221,1.63,4.101,3.277,5.678,4.943c3.626,3.841,6.088,7.988,8.354,13.001 c3.438,7.45,5.981,16.924,11.309,27.312c5.274,10.368,14.112,21.248,28.394,29.199c12.93,7.316,26.505,11.211,39.909,11.202 c12.268,0.018,24.257-3.313,34.913-9.581c16.046-9.438,29.03-25.126,38.298-45.56c5.614-12.411,9.742-26.826,12.572-42.766 c0.412-1.307,0.698-2.686,0.698-4.137c1.46-9.187,2.615-18.714,3.081-28.994l0.017-0.268v-0.25 c0.009-0.914,0.009-1.828,0.009-2.741C511.991,254.192,489.919,189.147,448.559,141.251z M484.483,325.145 c-0.26,5.668-0.743,11.04-1.334,16.252c-10.978,0-19.718,0-19.735,0c-4.11-0.009-7.745-1.638-10.494-4.361 c-2.722-2.749-4.353-6.385-4.361-10.494v-20.631c0-7.602-6.161-13.754-13.754-13.754c-7.594,0-13.754,6.152-13.754,13.754v20.631 c0.027,23.397,18.965,42.327,42.363,42.363c0,0,6.188,0,14.694,0c-3.948,14.962-9.366,27.222-15.688,36.444 c-5.838,8.551-12.33,14.614-19.01,18.536c-6.706,3.914-13.592,5.785-20.998,5.802c-8.068,0-16.905-2.302-26.379-7.647 c-5.731-3.259-9.466-6.572-12.393-10.092c-5.086-6.098-7.916-13.548-11.444-23.075c-2.668-7.065-5.758-15.195-11.327-23.316 c-2.884-4.227-6.51-8.355-10.88-12.196v-52.034c0-7.602-6.161-13.754-13.754-13.754c-7.594,0-13.754,6.152-13.754,13.754v36.354 c-7.11-2.623-15.07-4.897-24.293-6.733c-20.031-3.976-45.632-6.152-79.398-6.152c-14.246,0-27.329-0.116-39.533-0.34v-41.468 c0-7.602-6.161-13.754-13.754-13.754c-7.594,0-13.754,6.152-13.754,13.754v40.698c-12.93-0.502-24.571-1.191-34.904-2.087 c-19.27-1.656-34.232-4.038-45.604-7.065c-8.534-2.265-15.008-4.88-19.924-7.683c-7.351-4.262-11.336-8.596-14.712-14.586 c-3.277-5.9-5.668-13.88-7.683-24.231c-0.25-1.924-0.393-3.788-0.573-5.676h44.548c27.696-0.027,50.126-22.458,50.154-50.153 v-21.643c0-7.602-6.161-13.754-13.754-13.754c-7.594,0-13.754,6.152-13.754,13.754v21.643c-0.009,6.268-2.516,11.855-6.644,16.001 c-4.146,4.128-9.734,6.635-16.002,6.644H28.26c1.451-14.909,5.274-28.502,11.354-41.404c7.817-16.557,19.341-32.048,34.16-47.144 c18.804-19.163,41.898-34.349,68.16-45.148c0,11.972,0,22.314,0,27.239c0.09,11.784,4.236,23.801,12.187,34.027 c4.012,5.068,9.08,9.635,15.268,12.974c6.178,3.35,13.503,5.381,21.33,5.364c22.099,0,44.198,0,44.198,0 c7.593,0,13.754-6.161,13.754-13.754c0-7.593-6.161-13.754-13.754-13.754c0,0-22.1,0-44.198,0c-3.224-0.018-5.803-0.753-8.265-2.06 c-3.662-1.952-7.056-5.534-9.438-9.913c-2.391-4.325-3.609-9.375-3.573-12.886c0-6.187,0-20.872,0-36.658 c22.583-6.178,46.975-9.412,72.664-9.421c6.206,0,12.465,0.171,18.706,0.565c59.859,3.743,109.834,23.558,147.675,57.146v102.805 c0,7.593,6.16,13.754,13.754,13.754c7.593,0,13.754-6.161,13.754-13.754v-73.014c31.125,41.119,48.514,95.248,48.496,153.083 C484.492,323.651,484.492,324.403,484.483,325.145z">
-                        </path>
-                        <path class="st0"
-                            d="M322.482,153.429c-7.594,0-13.754,6.161-13.754,13.754v44.458c-0.018,9.608-7.818,17.417-17.434,17.434 h-49.043c-7.594,0-13.754,6.161-13.754,13.754c0,7.593,6.16,13.754,13.754,13.754h49.043c24.821-0.017,44.933-20.12,44.942-44.942 v-44.458C336.236,159.589,330.075,153.429,322.482,153.429z">
-                        </path>
-                    </g>
-                </g>
-            </svg>
-            <h2 class="text-4xl font-bold">Skills</h2>
-        </div>
-        <div class="w-3/4 mx-auto my-10">
-            <div class="grid grid-cols-1 gap-10 py-10 md:grid-cols-2 xl:grid-cols-3">
-                <div class="p-4 bg-gray-800 bg-opacity-30 rounded-xl">
-                    <h3 class="py-2 text-3xl font-bold text-center">Proficient</h3>
-                    <div class="grid grid-cols-2 gap-3 py-2">
-                        <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-                            <img src="assets/skill_logos/java-icon.png" class="w-20 h-20 mx-auto">
-                            <div class="text-xl font-bold text-center">
-                                Java
-                            </div>
-                        </div>
-                        <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-                            <img src="assets/skill_logos/react-icon.png" class="w-20 h-20 mx-auto">
-                            <div class="text-xl font-bold text-center">
-                                ReactJS
-                            </div>
-                        </div>
-                        <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-                            <img src="assets/skill_logos/tailwind-icon.png" class="w-20 h-20 mx-auto">
-                            <div class="text-xl font-bold text-center">
-                                TailwindCSS
-                            </div>
-                        </div>
-                        <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-                            <img src="assets/skill_logos/mysql-icon.png" class="w-20 h-20 mx-auto">
-                            <div class="text-xl font-bold text-center">
-                                MySQL
-                            </div>
-                        </div>
-                        <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-                            <img src="assets/skill_logos/git-icon.png" class="w-20 h-20 mx-auto invert">
-                            <div class="text-xl font-bold text-center">
-                                Git
-                            </div>
-                        </div>
-                        <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-                            <img src="assets/skill_logos/html5-icon.png" class="w-20 h-20 mx-auto">
-                            <div class="text-xl font-bold text-center">
-                                HTML
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-4 bg-gray-800 bg-opacity-30 rounded-xl">
-                    <h3 class="py-2 text-3xl font-bold text-center">Familiar</h3>
-                    <div class="grid grid-cols-2 gap-3 py-2">
-                        <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-                            <img src="assets/skill_logos/Js-icon.png" class="w-20 h-20 mx-auto">
-                            <div class="text-xl font-bold text-center">
-                                JavaScript
-                            </div>
-                        </div>
-                        <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-                            <img src="assets/skill_logos/c_plus_plus-icon.png" class="w-20 h-20 mx-auto">
-                            <div class="text-xl font-bold text-center">
-                                C/C++
-                            </div>
-                        </div>
-                        <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-                            <img src="assets/skill_logos/chakra-ui-icon.png" class="w-20 h-20 mx-auto">
-                            <div class="text-xl font-bold text-center">
-                                CharkaUI
-                            </div>
-                        </div>
-                        <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-                            <img src="assets/skill_logos/python-icon.png" class="w-20 h-20 mx-auto">
-                            <div class="text-xl font-bold text-center">
-                                Python
-                            </div>
-                        </div>
-                        <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-                            <img src="assets/skill_logos/bootstrap-5-logo-icon.png" class="w-20 h-20 mx-auto ">
-                            <div class="text-xl font-bold text-center">
-                                Bootstrap
-                            </div>
-                        </div>
-                        <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-                            <img src="assets/skill_logos/spring_boot-icon.png" class="w-20 h-20 mx-auto">
-                            <div class="text-xl font-bold text-center">
-                                SpringBoot
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-4 bg-gray-800 md:mx-36 md:col-span-2 xl:mx-0 xl:col-span-1 bg-opacity-30 rounded-xl">
-                    <h3 class="py-2 text-3xl font-bold text-center">Limited</h3>
-                    <div class="grid grid-cols-1 gap-2 p-3 py-2 ">
-                        <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-                            <img src="assets/skill_logos/pandas-icon.png" class="w-20 h-20 mx-auto">
-                            <div class="text-xl font-bold text-center">
-                                Pandas
-                            </div>
-                        </div>
-                        <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-                            <img src="assets/skill_logos/jquery-icon.png" class="w-20 h-20 mx-auto">
-                            <div class="text-xl font-bold text-center">
-                                Jquery
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section
+      id="skills"
+      class="min-h-screen text-white bg-gradient-to-b from-blue-500 to-cyan-300 section"
+    >
+      <div class="flex justify-center pt-3 space-x-2">
+        <svg
+          class="w-10 h-10"
+          version="1.1"
+          id="_x32_"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 512 512"
+          xml:space="preserve"
+          fill="#FFFFFF"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <g>
+              <path
+                class="st0"
+                d="M448.559,141.251c-5.14-5.954-10.584-11.578-16.253-16.942c-0.268-0.286-0.546-0.554-0.842-0.823 c-43.419-40.653-101.748-63.988-168.95-68.062c-6.868-0.429-13.7-0.618-20.407-0.618c-74.786-0.017-141.836,25.252-187.96,72.226 c-16.396,16.7-29.952,34.644-39.408,54.666c-9.465,19.995-14.703,42.058-14.686,66.182c0,0.045,0.009,0.098,0.009,0.143 C0.054,248.219,0,248.407,0,248.604c0,0.402,0.09,0.788,0.116,1.182c0.081,7.262,0.573,14.676,1.586,22.314l0.054,0.403l0.08,0.412 c2.732,13.843,6.242,26.648,14.023,38.074c5.803,8.524,14.005,15.76,24.392,21.159c15.652,8.14,35.925,12.85,64.408,15.912 c16.978,1.808,37.017,2.946,60.684,3.591c0.053,0,0.107,0.017,0.162,0.017c0.026,0,0.062-0.009,0.089-0.009 c15.993,0.43,33.588,0.646,53.198,0.646c44.109-0.028,72.494,3.976,90.25,9.742c8.489,2.757,14.479,5.784,18.966,8.927 c0.251,0.188,0.492,0.385,0.761,0.564c2.221,1.63,4.101,3.277,5.678,4.943c3.626,3.841,6.088,7.988,8.354,13.001 c3.438,7.45,5.981,16.924,11.309,27.312c5.274,10.368,14.112,21.248,28.394,29.199c12.93,7.316,26.505,11.211,39.909,11.202 c12.268,0.018,24.257-3.313,34.913-9.581c16.046-9.438,29.03-25.126,38.298-45.56c5.614-12.411,9.742-26.826,12.572-42.766 c0.412-1.307,0.698-2.686,0.698-4.137c1.46-9.187,2.615-18.714,3.081-28.994l0.017-0.268v-0.25 c0.009-0.914,0.009-1.828,0.009-2.741C511.991,254.192,489.919,189.147,448.559,141.251z M484.483,325.145 c-0.26,5.668-0.743,11.04-1.334,16.252c-10.978,0-19.718,0-19.735,0c-4.11-0.009-7.745-1.638-10.494-4.361 c-2.722-2.749-4.353-6.385-4.361-10.494v-20.631c0-7.602-6.161-13.754-13.754-13.754c-7.594,0-13.754,6.152-13.754,13.754v20.631 c0.027,23.397,18.965,42.327,42.363,42.363c0,0,6.188,0,14.694,0c-3.948,14.962-9.366,27.222-15.688,36.444 c-5.838,8.551-12.33,14.614-19.01,18.536c-6.706,3.914-13.592,5.785-20.998,5.802c-8.068,0-16.905-2.302-26.379-7.647 c-5.731-3.259-9.466-6.572-12.393-10.092c-5.086-6.098-7.916-13.548-11.444-23.075c-2.668-7.065-5.758-15.195-11.327-23.316 c-2.884-4.227-6.51-8.355-10.88-12.196v-52.034c0-7.602-6.161-13.754-13.754-13.754c-7.594,0-13.754,6.152-13.754,13.754v36.354 c-7.11-2.623-15.07-4.897-24.293-6.733c-20.031-3.976-45.632-6.152-79.398-6.152c-14.246,0-27.329-0.116-39.533-0.34v-41.468 c0-7.602-6.161-13.754-13.754-13.754c-7.594,0-13.754,6.152-13.754,13.754v40.698c-12.93-0.502-24.571-1.191-34.904-2.087 c-19.27-1.656-34.232-4.038-45.604-7.065c-8.534-2.265-15.008-4.88-19.924-7.683c-7.351-4.262-11.336-8.596-14.712-14.586 c-3.277-5.9-5.668-13.88-7.683-24.231c-0.25-1.924-0.393-3.788-0.573-5.676h44.548c27.696-0.027,50.126-22.458,50.154-50.153 v-21.643c0-7.602-6.161-13.754-13.754-13.754c-7.594,0-13.754,6.152-13.754,13.754v21.643c-0.009,6.268-2.516,11.855-6.644,16.001 c-4.146,4.128-9.734,6.635-16.002,6.644H28.26c1.451-14.909,5.274-28.502,11.354-41.404c7.817-16.557,19.341-32.048,34.16-47.144 c18.804-19.163,41.898-34.349,68.16-45.148c0,11.972,0,22.314,0,27.239c0.09,11.784,4.236,23.801,12.187,34.027 c4.012,5.068,9.08,9.635,15.268,12.974c6.178,3.35,13.503,5.381,21.33,5.364c22.099,0,44.198,0,44.198,0 c7.593,0,13.754-6.161,13.754-13.754c0-7.593-6.161-13.754-13.754-13.754c0,0-22.1,0-44.198,0c-3.224-0.018-5.803-0.753-8.265-2.06 c-3.662-1.952-7.056-5.534-9.438-9.913c-2.391-4.325-3.609-9.375-3.573-12.886c0-6.187,0-20.872,0-36.658 c22.583-6.178,46.975-9.412,72.664-9.421c6.206,0,12.465,0.171,18.706,0.565c59.859,3.743,109.834,23.558,147.675,57.146v102.805 c0,7.593,6.16,13.754,13.754,13.754c7.593,0,13.754-6.161,13.754-13.754v-73.014c31.125,41.119,48.514,95.248,48.496,153.083 C484.492,323.651,484.492,324.403,484.483,325.145z"
+              ></path>
+              <path
+                class="st0"
+                d="M322.482,153.429c-7.594,0-13.754,6.161-13.754,13.754v44.458c-0.018,9.608-7.818,17.417-17.434,17.434 h-49.043c-7.594,0-13.754,6.161-13.754,13.754c0,7.593,6.16,13.754,13.754,13.754h49.043c24.821-0.017,44.933-20.12,44.942-44.942 v-44.458C336.236,159.589,330.075,153.429,322.482,153.429z"
+              ></path>
+            </g>
+          </g>
+        </svg>
+        <h2 class="text-4xl font-bold">Skills</h2>
+      </div>
+      <div class="w-3/4 mx-auto my-10">
+        <div
+          class="grid grid-cols-1 gap-10 py-10 md:grid-cols-2 xl:grid-cols-3"
+        >
+          <div class="p-4 bg-gray-800 bg-opacity-30 rounded-xl">
+            <h3 class="py-2 text-3xl font-bold text-center">Proficient</h3>
+            <div class="grid grid-cols-2 gap-3 py-2">
+              <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
+                <img
+                  src="assets/skill_logos/java-icon.png"
+                  class="w-20 h-20 mx-auto"
+                />
+                <div class="text-xl font-bold text-center">Java</div>
+              </div>
+              <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
+                <img
+                  src="assets/skill_logos/react-icon.png"
+                  class="w-20 h-20 mx-auto"
+                />
+                <div class="text-xl font-bold text-center">ReactJS</div>
+              </div>
+              <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
+                <img
+                  src="assets/skill_logos/tailwind-icon.png"
+                  class="w-20 h-20 mx-auto"
+                />
+                <div class="text-xl font-bold text-center">TailwindCSS</div>
+              </div>
+              <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
+                <img
+                  src="assets/skill_logos/mysql-icon.png"
+                  class="w-20 h-20 mx-auto"
+                />
+                <div class="text-xl font-bold text-center">MySQL</div>
+              </div>
+              <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
+                <img
+                  src="assets/skill_logos/git-icon.png"
+                  class="w-20 h-20 mx-auto invert"
+                />
+                <div class="text-xl font-bold text-center">Git</div>
+              </div>
+              <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
+                <img
+                  src="assets/skill_logos/html5-icon.png"
+                  class="w-20 h-20 mx-auto"
+                />
+                <div class="text-xl font-bold text-center">HTML</div>
+              </div>
             </div>
-
+          </div>
+          <div class="p-4 bg-gray-800 bg-opacity-30 rounded-xl">
+            <h3 class="py-2 text-3xl font-bold text-center">Familiar</h3>
+            <div class="grid grid-cols-2 gap-3 py-2">
+              <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
+                <img
+                  src="assets/skill_logos/Js-icon.png"
+                  class="w-20 h-20 mx-auto"
+                />
+                <div class="text-xl font-bold text-center">JavaScript</div>
+              </div>
+              <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
+                <img
+                  src="assets/skill_logos/c_plus_plus-icon.png"
+                  class="w-20 h-20 mx-auto"
+                />
+                <div class="text-xl font-bold text-center">C/C++</div>
+              </div>
+              <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
+                <img
+                  src="assets/skill_logos/chakra-ui-icon.png"
+                  class="w-20 h-20 mx-auto"
+                />
+                <div class="text-xl font-bold text-center">CharkaUI</div>
+              </div>
+              <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
+                <img
+                  src="assets/skill_logos/python-icon.png"
+                  class="w-20 h-20 mx-auto"
+                />
+                <div class="text-xl font-bold text-center">Python</div>
+              </div>
+              <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
+                <img
+                  src="assets/skill_logos/bootstrap-5-logo-icon.png"
+                  class="w-20 h-20 mx-auto"
+                />
+                <div class="text-xl font-bold text-center">Bootstrap</div>
+              </div>
+              <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
+                <img
+                  src="assets/skill_logos/spring_boot-icon.png"
+                  class="w-20 h-20 mx-auto"
+                />
+                <div class="text-xl font-bold text-center">SpringBoot</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 bg-gray-800 md:mx-36 md:col-span-2 xl:mx-0 xl:col-span-1 bg-opacity-30 rounded-xl"
+          >
+            <h3 class="py-2 text-3xl font-bold text-center">Limited</h3>
+            <div class="grid grid-cols-1 gap-2 p-3 py-2">
+              <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
+                <img
+                  src="assets/skill_logos/pandas-icon.png"
+                  class="w-20 h-20 mx-auto"
+                />
+                <div class="text-xl font-bold text-center">Pandas</div>
+              </div>
+              <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
+                <img
+                  src="assets/skill_logos/jquery-icon.png"
+                  class="w-20 h-20 mx-auto"
+                />
+                <div class="text-xl font-bold text-center">Jquery</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--  Education Section  -->
     <section id="education" class="min-h-screen section">
-        <div class="flex justify-center pt-3 space-x-2">
-            <svg fill="#000000" class="w-10 h-10" viewBox="0 0 14 14" role="img" focusable="false" aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                    <path
-                        d="m 12.499079,12.25525 c 0.0968,0 0.188377,-0.0436 0.249339,-0.11884 0.06096,-0.0752 0.08473,-0.17385 0.06473,-0.26853 l -0.202146,-0.95662 c 0.115125,-0.11137 0.187491,-0.26686 0.187491,-0.43975 0,-0.182 -0.08106,-0.34343 -0.206876,-0.45558 l 0,-3.32202 -0.810333,0.50146 0,2.82056 c -0.125815,0.11215 -0.2069,0.27358 -0.2069,0.45558 0,0.17291 0.07239,0.32841 0.187515,0.43975 l -0.20217,0.95662 c -0.02,0.0947 0.0038,0.19335 0.06473,0.26853 0.06096,0.0752 0.152539,0.11884 0.249339,0.11884 l 0.625281,0 z M 12.773741,4.75539 7.5021019,1.49209 C 7.3477151,1.39699 7.1736728,1.34925 6.9996305,1.34925 c -0.1740423,0 -0.3482077,0.0477 -0.5016586,0.14284 l -5.271713,3.2633 C 1.0854931,4.84249 0.99999905,4.99633 0.99999905,5.1619 c 0,0.1656 0.085494,0.31949 0.22625985,0.40673 l 5.2716883,3.26333 c 0.153451,0.0952 0.3276163,0.14284 0.5016586,0.14284 0.1740423,0 0.3481092,-0.0477 0.5024714,-0.14284 L 12.773741,5.56863 c 0.140766,-0.0872 0.22626,-0.24113 0.22626,-0.40673 0,-0.16557 -0.08549,-0.31946 -0.22626,-0.40651 z M 6.9996059,9.78508 c -0.3283798,0 -0.6488777,-0.0912 -0.928242,-0.26411 l -3.0750017,-1.90368 0,3.27796 c 0,0.97016 1.7931578,1.7555 4.0032436,1.7555 2.2108742,0 4.0038842,-0.78536 4.0038842,-1.7555 l 0,-3.27796 -3.0748786,1.90368 C 7.6492472,9.69388 7.3279857,9.78508 6.9996059,9.78508 Z">
-                    </path>
-                </g>
-            </svg>
-            <h2 class="text-4xl font-bold text-center">My <span class="text-purple-500">Education</span></h2>
+      <div class="flex justify-center pt-3 space-x-2">
+        <svg
+          fill="#000000"
+          class="w-10 h-10"
+          viewBox="0 0 14 14"
+          role="img"
+          focusable="false"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="m 12.499079,12.25525 c 0.0968,0 0.188377,-0.0436 0.249339,-0.11884 0.06096,-0.0752 0.08473,-0.17385 0.06473,-0.26853 l -0.202146,-0.95662 c 0.115125,-0.11137 0.187491,-0.26686 0.187491,-0.43975 0,-0.182 -0.08106,-0.34343 -0.206876,-0.45558 l 0,-3.32202 -0.810333,0.50146 0,2.82056 c -0.125815,0.11215 -0.2069,0.27358 -0.2069,0.45558 0,0.17291 0.07239,0.32841 0.187515,0.43975 l -0.20217,0.95662 c -0.02,0.0947 0.0038,0.19335 0.06473,0.26853 0.06096,0.0752 0.152539,0.11884 0.249339,0.11884 l 0.625281,0 z M 12.773741,4.75539 7.5021019,1.49209 C 7.3477151,1.39699 7.1736728,1.34925 6.9996305,1.34925 c -0.1740423,0 -0.3482077,0.0477 -0.5016586,0.14284 l -5.271713,3.2633 C 1.0854931,4.84249 0.99999905,4.99633 0.99999905,5.1619 c 0,0.1656 0.085494,0.31949 0.22625985,0.40673 l 5.2716883,3.26333 c 0.153451,0.0952 0.3276163,0.14284 0.5016586,0.14284 0.1740423,0 0.3481092,-0.0477 0.5024714,-0.14284 L 12.773741,5.56863 c 0.140766,-0.0872 0.22626,-0.24113 0.22626,-0.40673 0,-0.16557 -0.08549,-0.31946 -0.22626,-0.40651 z M 6.9996059,9.78508 c -0.3283798,0 -0.6488777,-0.0912 -0.928242,-0.26411 l -3.0750017,-1.90368 0,3.27796 c 0,0.97016 1.7931578,1.7555 4.0032436,1.7555 2.2108742,0 4.0038842,-0.78536 4.0038842,-1.7555 l 0,-3.27796 -3.0748786,1.90368 C 7.6492472,9.69388 7.3279857,9.78508 6.9996059,9.78508 Z"
+            ></path>
+          </g>
+        </svg>
+        <h2 class="text-4xl font-bold text-center">
+          My <span class="text-purple-500">Education</span>
+        </h2>
+      </div>
+      <div class="justify-center pt-10 mx-10 lg:w-full lg:flex">
+        <div
+          class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64"
+          style="
+            background-image: url(&quot;assets/pictures/gsu-image.jpg&quot;);
+          "
+          title="Picture of Georgia State University School"
+        ></div>
+        <div
+          class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r"
+        >
+          <div class="mb-4">
+            <div class="text-xl font-bold text-gray-900">
+              Georgia State University
+            </div>
+            <div class="mb-2 text-lg font-bold text-gray-900">
+              Bachelor Of Science
+            </div>
+            <p class="text-base text-gray-700">Major in Computer Science</p>
+          </div>
+          <div class="text-sm">
+            <p class="text-gray-900">GPA: 4.33/4.5</p>
+            <p class="mb-5 text-gray-600">Atlanta, Georgia</p>
+            <p class="text-xl text-green-800">
+              August 2020 - August 2023 | Completed
+            </p>
+          </div>
         </div>
-        <div class="justify-center pt-10 mx-10 lg:w-full lg:flex">
-            <div class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64"
-                style="background-image: url('assets/pictures/gsu-image.jpg')"
-                title="Picture of Georgia State University School">
+      </div>
+      <div class="justify-center pt-10 mx-10 lg:w-full lg:flex">
+        <div
+          class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64"
+          style="
+            background-image: url(&quot;assets/pictures/CodeWithMosh-logo.jpg&quot;);
+          "
+          title="Coding With Mosh Logo"
+        ></div>
+        <div
+          class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r"
+        >
+          <div class="mb-4">
+            <div class="text-xl font-bold text-gray-900">
+              React 18 for Beginners | Certification
             </div>
-            <div
-                class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
-                <div class="mb-4">
-                    <div class="text-xl font-bold text-gray-900">Georgia State University</div>
-                    <div class="mb-2 text-lg font-bold text-gray-900">Bachelor Of Science</div>
-                    <p class="text-base text-gray-700">Major in Computer Science</p>
-                </div>
-                <div class="text-sm">
-                    <p class="text-gray-900 ">GPA: 4.33/4.5</p>
-                    <p class="mb-5 text-gray-600">Atlanta, Georgia</p>
-                    <p class="text-xl text-green-800">August 2020 - August 2023 | Completed</p>
-                </div>
+            <div class="mb-2 text-lg font-bold text-gray-900">
+              Code With Mosh
             </div>
+          </div>
+          <div class="text-sm">
+            <p class="mb-5 text-gray-600">Online Course</p>
+            <p class="text-xl text-green-800">
+              June 2023 - July 2023 | Completed
+            </p>
+          </div>
         </div>
-        <div class="justify-center pt-10 mx-10 lg:w-full lg:flex">
-            <div class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64""
-                style=" background-image: url('assets/pictures/CodeWithMosh-logo.jpg')" title="Coding With Mosh Logo">
+      </div>
+      <div class="justify-center pt-10 mx-10 lg:w-full lg:flex">
+        <div
+          class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64"
+          style="
+            background-image: url(&quot;assets/pictures/CodeWithMosh-logo.jpg&quot;);
+          "
+          title="Coding With Mosh Logo"
+        ></div>
+        <div
+          class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r"
+        >
+          <div class="mb-4">
+            <div class="text-xl font-bold text-gray-900">
+              React 18 for Intermediate | Certification
             </div>
-            <div
-                class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
-                <div class="mb-4">
-                    <div class="text-xl font-bold text-gray-900">React 18 for Beginners | Certification</div>
-                    <div class="mb-2 text-lg font-bold text-gray-900">Code With Mosh</div>
-                </div>
-                <div class="text-sm">
-                    <p class="mb-5 text-gray-600">Online Course</p>
-                    <p class="text-xl text-green-800">June 2023 - July 2023 | Completed</p>
-                </div>
+            <div class="mb-2 text-lg font-bold text-gray-900">
+              Code With Mosh
             </div>
+          </div>
+          <div class="text-sm">
+            <p class="mb-5 text-gray-600">Online Course</p>
+            <p class="text-xl text-green-800">
+              August 2023 - September 2023 | Completed
+            </p>
+          </div>
         </div>
-        <div class="justify-center pt-10 mx-10 lg:w-full lg:flex">
-            <div class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64""
-                style=" background-image: url('assets/pictures/CodeWithMosh-logo.jpg')" title="Coding With Mosh Logo">
+      </div>
+      <div class="justify-center py-10 mx-10 lg:w-full lg:flex">
+        <div
+          class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64"
+          style="
+            background-image: url(&quot;assets/skill_logos/spring_boot-icon.png&quot;);
+          "
+          title="Spring Boot Chad Darby"
+        ></div>
+        <div
+          class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r"
+        >
+          <div class="mb-4">
+            <div class="text-xl font-bold text-gray-900">
+              Spring Boot 3, Spring 6 & Hibernate | Certification
             </div>
-            <div
-                class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
-                <div class="mb-4">
-                    <div class="text-xl font-bold text-gray-900">React 18 for Intermediate | Certification</div>
-                    <div class="mb-2 text-lg font-bold text-gray-900">Code With Mosh</div>
-                </div>
-                <div class="text-sm">
-                    <p class="mb-5 text-gray-600">Online Course</p>
-                    <p class="text-xl text-green-800">August 2023 - September 2023 | Completed</p>
-                </div>
-            </div>
+            <div class="mb-2 text-lg font-bold text-gray-900">Chad Darby</div>
+          </div>
+          <div class="text-sm">
+            <p class="mb-5 text-gray-600">Udemy Online Course</p>
+            <p class="text-xl text-green-800">September 2023 | Completed</p>
+          </div>
         </div>
-        <div class="justify-center py-10 mx-10 lg:w-full lg:flex">
-            <div class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64"
-                style=" background-image: url('assets/skill_logos/spring_boot-icon.png')"
-                title="Spring Boot Chad Darby">
-            </div>
-            <div
-                class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
-                <div class="mb-4">
-                    <div class="text-xl font-bold text-gray-900">Spring Boot 3, Spring 6 & Hibernate | Certification
-                    </div>
-                    <div class="mb-2 text-lg font-bold text-gray-900">Chad Darby</div>
-                </div>
-                <div class="text-sm">
-                    <p class="mb-5 text-gray-600">Udemy Online Course</p>
-                    <p class="text-xl text-green-800">September 2023 | Completed</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
     <!--  Projects Section  -->
     <section id="projects" class="min-h-screen bg-slate-900 section">
-        <div class="flex justify-center pt-3 space-x-2">
-            <svg class="w-10 h-10" viewBox="0 0 24 24" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-                fill="#000000">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                    <defs>
-                        <style>
-                            .cls-1 {
-                                fill: none;
-                                stroke: #fffefe;
-                                stroke-miterlimit: 10;
-                                stroke-width: 1.91px;
-                            }
-                        </style>
-                    </defs>
-                    <line class="cls-1" x1="8.18" y1="22.5" x2="9.14" y2="17.73"></line>
-                    <line class="cls-1" x1="5.32" y1="22.5" x2="18.68" y2="22.5"></line>
-                    <rect class="cls-1" x="1.5" y="1.5" width="21" height="16.23" rx="1.91"></rect>
-                    <line class="cls-1" x1="15.75" y1="22.5" x2="14.8" y2="17.73"></line>
-                    <line class="cls-1" x1="1.5" y1="13.91" x2="22.5" y2="13.91"></line>
-                </g>
-            </svg>
-            <h2 class="text-4xl font-bold text-center text-white">Personal <span class="text-purple-500">Projects</span>
-            </h2>
-        </div>
-        <div class="max-w-6xl py-10 mx-auto ">
-            <div class="grid grid-cols-1 gap-5 p-5 lg:grid-cols-2 xl:grid-cols-3">
-                <div class="flex justify-center">
-                    <div class="relative max-w-sm overflow-hidden bg-white rounded shadow-lg">
-                        <img class="w-full"
-                            src="https://raw.githubusercontent.com/CalvinDoesCS/CalorieTracker/main/CalorieTracker.png"
-                            alt="Calorie Tracker Website">
-                        <div id="calorie-tracker" class="px-10 py-5 ">
-                            <div class="mb-2 text-xl font-bold">Calorie Tracker</div>
-                            <ul class="text-base list-disc">
-                                <li>
-                                    A Full Stack Application for users to create user accounts to store their calorie
-                                    intake
-                                    with a custom food database as well.
-                                </li>
-                                <li>
-                                    Built with ReactJS, SpringBoot, MySQL, CharkaUI, Zustand
-                                </li>
-                                <li>
-                                    Features: Efficient Calorie Tracking, Intuitive User Interface, Form
-                                    Handling, Easy Navigation, Token-based Authentication.
-                                </li>
-                            </ul>
-                            <div id="calorie-tracker-btn"
-                                class="absolute bottom-0 left-0 hidden w-full h-10 bg-cyan-500">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex justify-center">
-                    <div class="max-w-sm overflow-hidden bg-white rounded shadow-lg">
-
-                        <img class="w-full" src="assets/pictures/visual_sorter.png"
-                            alt="Visual Sorting Program Picture">
-                        <div class="px-6 py-4">
-                            <div class="mb-2 text-xl font-bold">Visual Sorting Algorithm</div>
-                            <ul class="text-base list-disc">
-                                <li>
-                                    A JavaFx Program to provide a visual representation of how different sorting
-                                    algorithms
-                                    operate on a set of data. It provides as an educational tool and to visualize the
-                                    time
-                                    complexity of each sorting algorithms.
-                                </li>
-                                <li>
-                                    Built with Java using JavaFx Libary
-                                </li>
-                                <li>
-                                    Features: Real-time visualization, Adjustable Sorting Algorithms, Customizable Array
-                                    Size, Speed & Play & Stop Button Control.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex justify-center">
-                    <div class="max-w-sm overflow-hidden bg-white rounded shadow-lg">
-                        <img class="w-full" src="assets/pictures/game_hub.png" alt="Game Hub Picture">
-                        <div class="px-6 py-4">
-                            <div class="mb-2 text-xl font-bold">Game Hub</div>
-                            <ul class="text-base list-disc">
-                                <li>
-                                    GameHub is a video game discovery web app that helps you find new and interesting
-                                    games
-                                    to play. With GameHub, you can search for games by platform, genre, and more.
-                                <li>
-                                    Built with React, CharkaUI, React Query, RAWGAPI
-                                </li>
-                                <li>
-                                    Features: Filtering Genres and Games, Searchable Game Bar
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      <div class="flex justify-center pt-3 space-x-2">
+        <svg
+          class="w-10 h-10"
+          viewBox="0 0 24 24"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#000000"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #fffefe;
+                  stroke-miterlimit: 10;
+                  stroke-width: 1.91px;
+                }
+              </style>
+            </defs>
+            <line class="cls-1" x1="8.18" y1="22.5" x2="9.14" y2="17.73"></line>
+            <line class="cls-1" x1="5.32" y1="22.5" x2="18.68" y2="22.5"></line>
+            <rect
+              class="cls-1"
+              x="1.5"
+              y="1.5"
+              width="21"
+              height="16.23"
+              rx="1.91"
+            ></rect>
+            <line
+              class="cls-1"
+              x1="15.75"
+              y1="22.5"
+              x2="14.8"
+              y2="17.73"
+            ></line>
+            <line class="cls-1" x1="1.5" y1="13.91" x2="22.5" y2="13.91"></line>
+          </g>
+        </svg>
+        <h2 class="text-4xl font-bold text-center text-white">
+          Personal <span class="text-purple-500">Projects</span>
+        </h2>
+      </div>
+      <div class="max-w-6xl py-10 mx-auto">
+        <div class="grid grid-cols-1 gap-5 p-5 lg:grid-cols-2 xl:grid-cols-3">
+          <div class="flex justify-center">
+            <div
+              class="relative max-w-sm overflow-hidden bg-white rounded shadow-lg"
+            >
+              <img
+                class="w-full"
+                src="https://raw.githubusercontent.com/CalvinDoesCS/CalorieTracker/main/CalorieTracker.png"
+                alt="Calorie Tracker Website"
+              />
+              <div id="calorie-tracker" class="px-10 py-5">
+                <div class="mb-2 text-xl font-bold">Calorie Tracker</div>
+                <ul class="text-base list-disc">
+                  <li>
+                    A Full Stack Application for users to create user accounts
+                    to store their calorie intake with a custom food database as
+                    well.
+                  </li>
+                  <li>
+                    Built with ReactJS, SpringBoot, MySQL, CharkaUI, Zustand
+                  </li>
+                  <li>
+                    Features: Efficient Calorie Tracking, Intuitive User
+                    Interface, Form Handling, Easy Navigation, Token-based
+                    Authentication.
+                  </li>
+                </ul>
+                <div
+                  id="calorie-tracker-btn"
+                  class="absolute bottom-0 left-0 hidden w-full h-10 bg-cyan-500"
+                ></div>
+              </div>
             </div>
+          </div>
+          <div class="flex justify-center">
+            <div class="max-w-sm overflow-hidden bg-white rounded shadow-lg">
+              <img
+                class="w-full"
+                src="assets/pictures/visual_sorter.png"
+                alt="Visual Sorting Program Picture"
+              />
+              <div class="px-6 py-4">
+                <div class="mb-2 text-xl font-bold">
+                  Visual Sorting Algorithm
+                </div>
+                <ul class="text-base list-disc">
+                  <li>
+                    A JavaFx Program to provide a visual representation of how
+                    different sorting algorithms operate on a set of data. It
+                    provides as an educational tool and to visualize the time
+                    complexity of each sorting algorithms.
+                  </li>
+                  <li>Built with Java using JavaFx Libary</li>
+                  <li>
+                    Features: Real-time visualization, Adjustable Sorting
+                    Algorithms, Customizable Array Size, Speed & Play & Stop
+                    Button Control.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <div class="max-w-sm overflow-hidden bg-white rounded shadow-lg">
+              <img
+                class="w-full"
+                src="assets/pictures/game_hub.png"
+                alt="Game Hub Picture"
+              />
+              <div class="px-6 py-4">
+                <div class="mb-2 text-xl font-bold">Game Hub</div>
+                <ul class="text-base list-disc">
+                  <li>
+                    GameHub is a video game discovery web app that helps you
+                    find new and interesting games to play. With GameHub, you
+                    can search for games by platform, genre, and more.
+                  </li>
+
+                  <li>Built with React, CharkaUI, React Query, RAWGAPI</li>
+                  <li>
+                    Features: Filtering Genres and Games, Searchable Game Bar
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--  Experience Section  -->
     <section id="experience" class="min-h-screen section">
-        <div class="flex justify-center pt-3 space-x-2">
-            <svg fill="#000000" class="w-10 h-10" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                    <path
-                        d="M56.99,13.5H55v-3H45v3h-4V7.706C41,5.938,39.562,4.5,37.794,4.5H22.206C20.438,4.5,19,5.938,19,7.706V13.5h-4v-3H5v3H3.01 C1.351,13.5,0,14.851,0,16.51v35.98c0,1.659,1.351,3.01,3.01,3.01H8h2h40h2h1h3.99c1.659,0,3.01-1.351,3.01-3.01V16.51 C60,14.851,58.649,13.5,56.99,13.5z M21,7.706C21,7.041,21.541,6.5,22.206,6.5h15.588C38.459,6.5,39,7.041,39,7.706V13.5H21V7.706z M8,53.5v-38h2v38H8z M50,53.5v-38h2v38H50z">
-                    </path>
-                </g>
-            </svg>
-            <h2 class="text-4xl font-bold text-center">My <span class="text-purple-500">Experience</span>
-            </h2>
-        </div>
-
+      <div class="flex justify-center pt-3 space-x-2">
+        <svg
+          fill="#000000"
+          class="w-10 h-10"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 60 60"
+          xml:space="preserve"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M56.99,13.5H55v-3H45v3h-4V7.706C41,5.938,39.562,4.5,37.794,4.5H22.206C20.438,4.5,19,5.938,19,7.706V13.5h-4v-3H5v3H3.01 C1.351,13.5,0,14.851,0,16.51v35.98c0,1.659,1.351,3.01,3.01,3.01H8h2h40h2h1h3.99c1.659,0,3.01-1.351,3.01-3.01V16.51 C60,14.851,58.649,13.5,56.99,13.5z M21,7.706C21,7.041,21.541,6.5,22.206,6.5h15.588C38.459,6.5,39,7.041,39,7.706V13.5H21V7.706z M8,53.5v-38h2v38H8z M50,53.5v-38h2v38H50z"
+            ></path>
+          </g>
+        </svg>
+        <h2 class="text-4xl font-bold text-center">
+          My <span class="text-purple-500">Experience</span>
+        </h2>
+      </div>
     </section>
     <!--  Contact Section  -->
     <section id="contact" class="bg-cyan-100 section">
-        <div class="flex justify-center pt-3 space-x-2">
-            <h2 class="text-4xl font-bold text-center">Contact <span class="text-purple-500">Me</span>
-            </h2>
-        </div>
-        <div class="max-w-4xl mx-10 lg:mx-auto ">
-            <div class="p-8 my-4 bg-white shadow-2xl rounded-2xl">
-                <div class="flex">
-                    <h1 class="text-5xl font-bold uppercase">Send me a <br /> message :></h1>
-                </div>
-                <form>
-                    <div class="grid grid-cols-1 gap-5 mt-5 md:grid-cols-2">
-                        <input
-                            class="w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="First Name*" />
-                        <input
-                            class="w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="Last Name*" />
-                        <input
-                            class="w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="email" placeholder="Email*" />
-                        <input
-                            class="w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="number" placeholder="Phone*" />
-                    </div>
-                    <div class="my-4">
-                        <textarea placeholder="Message*"
-                            class="w-full h-32 p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
-                    </div>
-                    <div class="w-1/2 my-2 lg:w-1/4">
-                        <button
-                            class="w-full p-3 text-sm font-bold tracking-wide text-gray-100 uppercase bg-blue-900 rounded-lg focus:outline-none focus:shadow-outline">
-                            Send Message
-                        </button>
-                    </div>
-                </form>
-
+      <div class="flex justify-center pt-3 space-x-2">
+        <h2 class="text-4xl font-bold text-center">
+          Contact <span class="text-purple-500">Me</span>
+        </h2>
+      </div>
+      <div class="max-w-4xl mx-10 lg:mx-auto">
+        <div class="p-8 my-4 bg-white shadow-2xl rounded-2xl">
+          <div class="flex">
+            <h1 class="text-5xl font-bold uppercase">
+              Send me a <br />
+              message :>
+            </h1>
+          </div>
+          <form>
+            <div class="grid grid-cols-1 gap-5 mt-5 md:grid-cols-2">
+              <input
+                class="w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline"
+                type="text"
+                placeholder="First Name*"
+              />
+              <input
+                class="w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline"
+                type="text"
+                placeholder="Last Name*"
+              />
+              <input
+                class="w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline"
+                type="email"
+                placeholder="Email*"
+              />
+              <input
+                class="w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline"
+                type="number"
+                placeholder="Phone*"
+              />
             </div>
-        </div>
-        <footer class="text-white bg-blue-950">
-            <div class="pt-5 mx-6 20 max-w-7xl lg:mx-auto">
-                <div class="hidden md:justify-evenly md:flex">
-                    <div class="">
-                        <h3 class="mb-3 text-3xl font-bold">Calvin's Portfolio</h3>
-                        <p>Thank you for visiting my personal portfolio website. <br>Hope you enjoyed it!</p>
-                    </div>
-                    <div class="">
-                        <h3 class="mb-3 text-3xl font-bold">Quick Links</h3>
-                        <ul class="text-md">
-                            <li class="mb-1">
-                                <a href="#home" class="flex space-x-1">
-                                    <div class="pt-[2px]">
-                                        <svg fill=" #000000" version="1.1" class="w-4 h-4 p-1 bg-white rounded-full "
-                                            id="
-                                            Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
-                                            xml:space="preserve">
-                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                stroke-linejoin="round">
-                                            </g>
-                                            <g id="SVGRepo_iconCarrier">
-                                                <path id="XMLID_222_"
-                                                    d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z">
-                                                </path>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <p class="align-middle">Home</p>
-                                </a>
-                            </li>
-                            <li class="mb-1">
-                                <a href="#about" class="flex space-x-1 align-middle"> <svg fill=" #000000" version="1.1"
-                                        class="w-4 h-4 p-1 bg-white rounded-full" id="
-                                Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        viewBox="0 0 330 330" xml:space="preserve">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
-                                        </g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <path id="XMLID_222_"
-                                                d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                    <p class="align-middle">About</p>
-                                </a>
-                            </li>
-                            <li class="mb-1">
-                                <a href="#skills" class="flex space-x-1 align-middle"> <svg fill=" #000000"
-                                        version="1.1" class="w-4 h-4 p-1 bg-white rounded-full" id="
-                                Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        viewBox="0 0 330 330" xml:space="preserve">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
-                                        </g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <path id="XMLID_222_"
-                                                d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                    <p class="align-middle">Skills</p>
-                                </a>
-                            </li>
-                            <li class="mb-1">
-                                <a href="#education" class="flex space-x-1 align-middle">
-                                    <div class="pt-[2px]">
-                                        <svg fill=" #000000" version="1.1" class="w-4 h-4 p-1 bg-white rounded-full" id="
-                                                                        Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
-                                            xml:space="preserve">
-                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                stroke-linejoin="round">
-                                            </g>
-                                            <g id="SVGRepo_iconCarrier">
-                                                <path id="XMLID_222_"
-                                                    d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z">
-                                                </path>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <p class="align-middle">Education</p>
-                                </a>
-                            </li>
-                            <li class="mb-1">
-                                <a href="#projects" class="flex space-x-1 align-middle">
-                                    <div class="pt-[2px]">
-                                        <svg fill="#000000" version="1.1" class="w-4 h-4 p-1 bg-white rounded-full" id="
-                                Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                            viewBox="0 0 330 330" xml:space="preserve">
-                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                stroke-linejoin="round">
-                                            </g>
-                                            <g id="SVGRepo_iconCarrier">
-                                                <path id="XMLID_222_"
-                                                    d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z">
-                                                </path>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <p class="align-middle">Projects</p>
-                                </a>
-                            </li>
-                            <li class="mb-1">
-                                <a href="#experience" class="flex space-x-1 align-middle">
-                                    <div class="pt-[2px]">
-                                        <svg fill=" #000000" version="1.1" class="w-4 h-4 p-1 bg-white rounded-full" id="
-                                Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                            viewBox="0 0 330 330" xml:space="preserve">
-                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                stroke-linejoin="round">
-                                            </g>
-                                            <g id="SVGRepo_iconCarrier">
-                                                <path id="XMLID_222_"
-                                                    d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z">
-                                                </path>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <p class="align-middle">Experience</p>
-                                </a>
-                            </li>
-                            <li class="mb-1">
-                                <a href="#contact" class="flex space-x-1 align-middle">
-                                    <div class="pt-[2px]">
-                                        <svg version="1.1" class="w-4 h-4 p-1 bg-white rounded-full fill-black" Layer_1"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
-                                            xml:space="preserve">
-                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                stroke-linejoin="round">
-                                            </g>
-                                            <g id="SVGRepo_iconCarrier">
-                                                <path id="XMLID_222_"
-                                                    d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z">
-                                                </path>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <p class="align-middle">Contact</p>
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="">
-                        <h3 class="mb-3 text-3xl font-bold">Contact Info</h3>
-                        <div class="flex space-x-1">
-                            <div class="pt-1">
-                                <svg class="w-4 h-4" viewBox="0 -2.5 20 20" version="1.1"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    fill="#FFFFFF">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <g id="Dribbble-Light-Preview"
-                                                transform="translate(-340.000000, -922.000000)" fill="#FFFFFF">
-                                                <g id="icons" transform="translate(56.000000, 160.000000)">
-                                                    <path
-                                                        d="M294,774.474 L284,765.649 L284,777 L304,777 L304,765.649 L294,774.474 Z M294.001,771.812 L284,762.981 L284,762 L304,762 L304,762.981 L294.001,771.812 Z"
-                                                        id="email-[#1572]"> </path>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
-                            <p>CalvinNTran.cs@gmail.com</p>
-                        </div>
-                        <div class="flex"></div>
-                        <div class="flex"></div>
-                        <div class="flex"></div>
-                    </div>
-                </div>
+            <div class="my-4">
+              <textarea
+                placeholder="Message*"
+                class="w-full h-32 p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline"
+              ></textarea>
             </div>
-            <hr class="hidden my-2 opacity-1 md:block">
-            <center class="pb-2">
-                Designed With <span class="text-red-500">&hearts;</span> By <span class="text-yellow-500">Calvin
-                    Tran</span>
-            </center>
-        </footer>
+            <div class="w-1/2 my-2 lg:w-1/4">
+              <button
+                class="w-full p-3 text-sm font-bold tracking-wide text-gray-100 uppercase bg-blue-900 rounded-lg focus:outline-none focus:shadow-outline"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer class="text-white bg-blue-950">
+        <div class="pt-5 mx-6 20 max-w-7xl lg:mx-auto">
+          <div class="hidden md:justify-evenly md:flex">
+            <div class="">
+              <h3 class="mb-3 text-3xl font-bold">Calvin's Portfolio</h3>
+              <p>
+                Thank you for visiting my personal portfolio website. <br />Hope
+                you enjoyed it!
+              </p>
+            </div>
+            <div class="">
+              <h3 class="mb-3 text-3xl font-bold">Quick Links</h3>
+              <ul class="text-md">
+                <li class="mb-1">
+                  <a href="#home" class="flex space-x-1">
+                    <div class="pt-[2px]">
+                      <svg
+                        fill=" #000000"
+                        version="1.1"
+                        class="w-4 h-4 p-1 bg-white rounded-full"
+                        id="
+                                            Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 330 330"
+                        xml:space="preserve"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            id="XMLID_222_"
+                            d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <p class="align-middle">Home</p>
+                  </a>
+                </li>
+                <li class="mb-1">
+                  <a href="#about" class="flex space-x-1 align-middle">
+                    <svg
+                      fill=" #000000"
+                      version="1.1"
+                      class="w-4 h-4 p-1 bg-white rounded-full"
+                      id="
+                                Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 330 330"
+                      xml:space="preserve"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          id="XMLID_222_"
+                          d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"
+                        ></path>
+                      </g>
+                    </svg>
+                    <p class="align-middle">About</p>
+                  </a>
+                </li>
+                <li class="mb-1">
+                  <a href="#skills" class="flex space-x-1 align-middle">
+                    <svg
+                      fill=" #000000"
+                      version="1.1"
+                      class="w-4 h-4 p-1 bg-white rounded-full"
+                      id="
+                                Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 330 330"
+                      xml:space="preserve"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          id="XMLID_222_"
+                          d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"
+                        ></path>
+                      </g>
+                    </svg>
+                    <p class="align-middle">Skills</p>
+                  </a>
+                </li>
+                <li class="mb-1">
+                  <a href="#education" class="flex space-x-1 align-middle">
+                    <div class="pt-[2px]">
+                      <svg
+                        fill=" #000000"
+                        version="1.1"
+                        class="w-4 h-4 p-1 bg-white rounded-full"
+                        id="
+                                                                        Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 330 330"
+                        xml:space="preserve"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            id="XMLID_222_"
+                            d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <p class="align-middle">Education</p>
+                  </a>
+                </li>
+                <li class="mb-1">
+                  <a href="#projects" class="flex space-x-1 align-middle">
+                    <div class="pt-[2px]">
+                      <svg
+                        fill="#000000"
+                        version="1.1"
+                        class="w-4 h-4 p-1 bg-white rounded-full"
+                        id="
+                                Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 330 330"
+                        xml:space="preserve"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            id="XMLID_222_"
+                            d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <p class="align-middle">Projects</p>
+                  </a>
+                </li>
+                <li class="mb-1">
+                  <a href="#experience" class="flex space-x-1 align-middle">
+                    <div class="pt-[2px]">
+                      <svg
+                        fill=" #000000"
+                        version="1.1"
+                        class="w-4 h-4 p-1 bg-white rounded-full"
+                        id="
+                                Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 330 330"
+                        xml:space="preserve"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            id="XMLID_222_"
+                            d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <p class="align-middle">Experience</p>
+                  </a>
+                </li>
+                <li class="mb-1">
+                  <a href="#contact" class="flex space-x-1 align-middle">
+                    <div class="pt-[2px]">
+                      <svg
+                        version="1.1"
+                        class="w-4 h-4 p-1 bg-white rounded-full fill-black"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 330 330"
+                        xml:space="preserve"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            id="XMLID_222_"
+                            d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <p class="align-middle">Contact</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="">
+              <h3 class="mb-3 text-3xl font-bold">Contact Info</h3>
+              <div class="flex space-x-1">
+                <div class="pt-1">
+                  <svg
+                    class="w-4 h-4"
+                    viewBox="0 -2.5 20 20"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#FFFFFF"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g
+                        id="Page-1"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          id="Dribbble-Light-Preview"
+                          transform="translate(-340.000000, -922.000000)"
+                          fill="#FFFFFF"
+                        >
+                          <g
+                            id="icons"
+                            transform="translate(56.000000, 160.000000)"
+                          >
+                            <path
+                              d="M294,774.474 L284,765.649 L284,777 L304,777 L304,765.649 L294,774.474 Z M294.001,771.812 L284,762.981 L284,762 L304,762 L304,762.981 L294.001,771.812 Z"
+                              id="email-[#1572]"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <p>CalvinNTran.cs@gmail.com</p>
+              </div>
+              <div class="flex"></div>
+              <div class="flex"></div>
+              <div class="flex"></div>
+            </div>
+          </div>
+        </div>
+        <hr class="hidden my-2 opacity-1 md:block" />
+        <center class="pb-2">
+          Designed With <span class="text-red-500">&hearts;</span> By
+          <span class="text-yellow-500">Calvin Tran</span>
+        </center>
+      </footer>
     </section>
     <script>
-        document.querySelectorAll(".nav-link").forEach((link) => {
-            if (link.href === window.location.href) {
-                link.classList.add("active");
-                link.setAttribute("aria-current", "page");
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        if (link.href === window.location.href) {
+          link.classList.add("active");
+          link.setAttribute("aria-current", "page");
+        }
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".nav-btn");
+        const sections = document.querySelectorAll(".section");
+
+        window.addEventListener("scroll", function () {
+          let current = "";
+
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+
+            if (pageYOffset >= sectionTop - sectionHeight / 3) {
+              current = section.getAttribute("id");
             }
+          });
+
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").slice(1) === current) {
+              link.classList.add("active");
+            }
+          });
         });
-        document.addEventListener("DOMContentLoaded", function () {
-            const navLinks = document.querySelectorAll('.nav-btn');
-            const sections = document.querySelectorAll('.section');
-
-            window.addEventListener('scroll', function () {
-                let current = '';
-
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
-
-                    if (pageYOffset >= sectionTop - sectionHeight / 3) {
-                        current = section.getAttribute('id');
-                    }
-                });
-
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href').slice(1) === current) {
-                        link.classList.add('active');
-                    }
-                });
-            });
+      });
+      document
+        .querySelector("#calorie-tracker")
+        .addEventListener("mouseover", function () {
+          var btn = document.querySelector("#calorie-tracker-btn");
+          btn.classList.remove("hidden");
         });
-        document.querySelector("#calorie-tracker").addEventListener("mouseover", function () {
-            var btn = document.querySelector("#calorie-tracker-btn");
-            btn.classList.remove('hidden');
-        });
-        document.querySelector("#calorie-tracker").addEventListener("mouseout", function () {
-            var btn = document.querySelector("#calorie-tracker-btn");
-            btn.classList.add('hidden');
+      document
+        .querySelector("#calorie-tracker")
+        .addEventListener("mouseout", function () {
+          var btn = document.querySelector("#calorie-tracker-btn");
+          btn.classList.add("hidden");
         });
     </script>
-</body>
-
+  </body>
 </html>

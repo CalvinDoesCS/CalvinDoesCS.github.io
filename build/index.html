@@ -754,22 +754,18 @@
         });
       });
     });
-    document
-      .querySelector("#calorie-tracker")
-      .addEventListener("mouseover", function () {
-        var btn = document.querySelector("#calorie-tracker-btn");
-        btn.classList.remove("hidden")
-      })
-      .addEventListener("mouseout", function () {
-        var btn = document.querySelector("#calorie-tracker-btn");
-        btn.classList.add("hidden");
-      });
+    const tracker = document.querySelector("#calorie-tracker");
+    const btn = document.querySelector("#calorie-tracker-btn");
+
+    tracker.addEventListener("mouseover", () => btn.classList.remove("hidden"));
+    tracker.addEventListener("mouseout", () => btn.classList.add("hidden"));
 
     var isNavOpen = false;
+    const menu = document.querySelector("#hamburger-menu");
     document
       .querySelector("#hamburger-nav")
       .addEventListener("click", function () {
-        var menu = document.querySelector("#hamburger-menu");
+
         if (isNavOpen) {
           menu.classList.remove("flex");
           menu.classList.add("hidden");

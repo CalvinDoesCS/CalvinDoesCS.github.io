@@ -199,7 +199,7 @@
               </div>
             </button>
             <div id="resume"
-              class="fixed inset-0 flex items-center justify-center w-screen h-screen bg-black bg-opacity-50 backdrop-blur-sm"
+              class="fixed inset-0 items-center justify-center hidden w-screen h-screen bg-black bg-opacity-50 backdrop-blur-sm"
               onclick="hideResume()">
               <div class="w-[800px] flex flex-col">
                 <button onclick="hideResume()" class="text-xl text-white place-self-end">X</button>
@@ -439,11 +439,12 @@
     <div class="max-w-6xl py-10 mx-auto">
       <div class="grid grid-cols-1 gap-5 p-5 lg:grid-cols-2 xl:grid-cols-3">
         <div class="flex justify-center">
-          <div class="relative max-w-sm overflow-hidden bg-white rounded shadow-lg">
+          <a href="https://github.com/CalvinDoesCS/CalorieTracker"
+            class="relative max-w-sm overflow-hidden bg-white rounded shadow-lg project-card">
             <img class="w-full"
               src="https://raw.githubusercontent.com/CalvinDoesCS/CalorieTracker/main/CalorieTracker.png"
               alt="Calorie Tracker Website" />
-            <div id="calorie-tracker" class="px-10 py-5">
+            <div class="px-10 py-5">
               <div class="mb-2 text-xl font-bold">Calorie Tracker</div>
               <ul class="text-base list-disc">
                 <li>
@@ -456,12 +457,17 @@
                   Handling, Easy Navigation, Token-based Authentication.
                 </li>
               </ul>
-              <div id="calorie-tracker-btn" class="absolute bottom-0 left-0 hidden w-full h-10 bg-cyan-500"></div>
+              <div class="absolute bottom-0 left-0 hidden w-full h-10 project-btn bg-cyan-200">
+                <div class="flex justify-end p-2">
+                  Visit This Github Repo! >
+                </div>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="flex justify-center">
-          <div class="max-w-sm overflow-hidden bg-white rounded shadow-lg">
+          <a href="https://github.com/CalvinDoesCS/visual-sorting-java"
+            class="relative max-w-sm overflow-hidden bg-white rounded shadow-lg project-card">
             <img class="w-full" src="assets/pictures/visual_sorter.png" alt="Visual Sorting Program Picture" />
             <div class="px-6 py-4">
               <div class="mb-2 text-xl font-bold">Visual Sorting Algorithm</div>
@@ -478,11 +484,17 @@
                   Customizable Array Size, Speed & Play & Stop Button Control.
                 </li>
               </ul>
+              <div class="absolute bottom-0 left-0 hidden w-full h-10 project-btn bg-cyan-200">
+                <div class="flex justify-end p-2">
+                  Visit This Github Repo! >
+                </div>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="flex justify-center">
-          <div class="max-w-sm overflow-hidden bg-white rounded shadow-lg">
+        <div class="flex justify-center ">
+          <a href="https://github.com/CalvinDoesCS/game-hub"
+            class="relative max-w-sm overflow-hidden bg-white rounded shadow-lg project-card">
             <img class="w-full" src="assets/pictures/game_hub.png" alt="Game Hub Picture" />
             <div class="px-6 py-4">
               <div class="mb-2 text-xl font-bold">Game Hub</div>
@@ -496,8 +508,13 @@
                 <li>Built with React, CharkaUI, React Query, RAWGAPI</li>
                 <li>Features: Filtering Genres and Games, Searchable Game Bar</li>
               </ul>
+              <div class="absolute bottom-0 left-0 hidden w-full h-10 project-btn bg-cyan-200">
+                <div class="flex justify-end p-2">
+                  Visit This Github Repo! >
+                </div>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -520,6 +537,118 @@
         <span class="text-purple-500">Experience</span>
       </h2>
     </div>
+    <div class="py-16 lg:py-20">
+      <div class="flex flex-col justify-center ">
+        <div class="w-full px-4 mx-auto lg:max-w-5xl ">
+          <div class="relative">
+            <!-- Middle Line  -->
+            <div class="absolute hidden w-1 h-full transform -translate-x-1/2 bg-orange-500 lg:block left-1/2">
+
+            </div>
+            <div class="space-y-2 lg:space-y-4">
+              <div>
+                <div class="flex flex-col items-center">
+                  <div class="flex items-center justify-start w-full mx-auto">
+                    <div class="w-full lg:w-1/2 lg:pr-8">
+                      <div class="relative flex-1 mb-10 bg-orange-200 rounded shadow lg:mb-8">
+                        <div class="absolute inline-block w-4 overflow-hidden -translate-y-1/2 top-3 -right-4">
+                          <div
+                            class="hidden h-10 origin-bottom-left transform -rotate-45 bg-orange-200 shadow lg:block">
+                          </div>
+                        </div>
+                        <div class="relative z-1">
+                          <div class="flex flex-wrap items-center">
+                            <div class="p-4 md:w-1/4 ">
+                              <span class="text-lg text-black ">September</span>
+                              <span class="text-lg text-black ">2021 - Present</span>
+                            </div>
+                            <div class="flex-1 p-4 pr-4 border-l border-gray-800 ">
+                              <p class="flex mb-2 text-xl font-bold text-black ">
+                                Waiter <span class="pl-3">| Le Mekong Vietnamese Cusine</span></p>
+
+                              <p class="text-black">
+                              <ul class="pl-2 list-disc">
+                                <li>
+                                  Consistently surpassed sales targets by 12% through adept up-selling of appetizers,
+                                  drinks, and entrees, catering to patron tastes and interests.
+                                </li>
+                                <li>
+                                  Manage an average of 20 tables per shift, ensuring timely order-taking and delivery
+                                </li>
+                              </ul>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="absolute flex items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-orange-400 rounded-full left-1/2 lg:translate-y-[4px]">
+                    <svg fill="#000000" width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M56.99,13.5H55v-3H45v3h-4V7.706C41,5.938,39.562,4.5,37.794,4.5H22.206C20.438,4.5,19,5.938,19,7.706V13.5h-4v-3H5v3H3.01 C1.351,13.5,0,14.851,0,16.51v35.98c0,1.659,1.351,3.01,3.01,3.01H8h2h40h2h1h3.99c1.659,0,3.01-1.351,3.01-3.01V16.51 C60,14.851,58.649,13.5,56.99,13.5z M21,7.706C21,7.041,21.541,6.5,22.206,6.5h15.588C38.459,6.5,39,7.041,39,7.706V13.5H21V7.706z M8,53.5v-38h2v38H8z M50,53.5v-38h2v38H50z">
+                        </path>
+                      </g>
+                    </svg>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right section
+              <div>
+                <div class="flex flex-col items-center">
+                  <div class="flex items-center justify-end w-full mx-auto">
+                    <div class="w-full lg:w-1/2 lg:pl-8">
+                      <div class="relative flex-1 mb-10 bg-orange-200 rounded shadow lg:mb-8 ">
+                        <div class="absolute inline-block w-4 overflow-hidden -translate-y-1/2 top-7 -left-4">
+                          <div
+                            class="hidden h-10 origin-top-right transform -rotate-45 bg-orange-200 lg:block drop-shadow-lg">
+                          </div>
+                        </div>
+                        <div class="relative z-20 ">
+                          <div class="flex flex-wrap items-center">
+                            <div class="p-4 md:w-1/4 ">
+                              <span class="text-lg text-black">January</span>
+
+                              <span class="text-lg text-black ">2024-Present</span>
+                            </div>
+                            <div class="flex-1 p-4 pr-4 border-l border-black ">
+                              <p class="flex mb-2 text-xl font-bold text-black ">
+                                AI Consultant <span class="pl-3">| ScaleAI </span></p>
+                              <p class="text-black ">
+                                
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="absolute flex items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-orange-400 rounded-full left-1/2 lg:translate-y-[4px]">
+                    <svg fill="#000000" width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M56.99,13.5H55v-3H45v3h-4V7.706C41,5.938,39.562,4.5,37.794,4.5H22.206C20.438,4.5,19,5.938,19,7.706V13.5h-4v-3H5v3H3.01 C1.351,13.5,0,14.851,0,16.51v35.98c0,1.659,1.351,3.01,3.01,3.01H8h2h40h2h1h3.99c1.659,0,3.01-1.351,3.01-3.01V16.51 C60,14.851,58.649,13.5,56.99,13.5z M21,7.706C21,7.041,21.541,6.5,22.206,6.5h15.588C38.459,6.5,39,7.041,39,7.706V13.5H21V7.706z M8,53.5v-38h2v38H8z M50,53.5v-38h2v38H50z">
+                        </path>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
   <!--  Contact Section  -->
   <section id="contact" class="bg-cyan-100 section">
@@ -538,23 +667,24 @@
             message :>
           </h1>
         </div>
-        <form>
+        <form action="https://formspree.io/f/xpzvdwby" method="POST">
           <div class="grid grid-cols-1 gap-5 mt-5 md:grid-cols-2">
             <input class="w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline"
-              type="text" placeholder="First Name*" />
+              type="text" placeholder="First Name*" name="first-name" required />
             <input class="w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline"
-              type="text" placeholder="Last Name*" />
+              type="text" placeholder="Last Name*" name="last-name" required />
             <input class="w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline"
-              type="email" placeholder="Email*" />
+              type="email" placeholder="Email*" name="email" required />
             <input class="w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline"
-              type="number" placeholder="Phone*" />
+              type="text" placeholder="Phone*" name="phone" required />
           </div>
           <div class="my-4">
-            <textarea placeholder="Message*"
-              class="w-full h-32 p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+            <textarea placeholder="Message*" name="message"
+              class="w-full h-32 p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline"
+              required></textarea>
           </div>
           <div class="w-1/2 my-2 lg:w-1/4">
-            <button
+            <button type="submit"
               class="w-full p-3 text-sm font-bold tracking-wide text-gray-100 uppercase bg-blue-900 rounded-lg focus:outline-none focus:shadow-outline">
               Send Message
             </button>
@@ -769,11 +899,14 @@
         });
       });
     });
-    const tracker = document.querySelector("#calorie-tracker");
-    const btn = document.querySelector("#calorie-tracker-btn");
+    const projectCards = document.querySelectorAll(".project-card");
 
-    tracker.addEventListener("mouseover", () => btn.classList.remove("hidden"));
-    tracker.addEventListener("mouseout", () => btn.classList.add("hidden"));
+    projectCards.forEach((card) => {
+      const btn = card.querySelector(".project-btn");
+      card.addEventListener("mouseover", () => btn.classList.remove("hidden"));
+      card.addEventListener("mouseout", () => btn.classList.add("hidden"));
+    });
+
 
     var isNavOpen = false;
     const menu = document.querySelector("#hamburger-menu");

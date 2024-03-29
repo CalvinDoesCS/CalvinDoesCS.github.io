@@ -17,7 +17,7 @@ function typeWriter(txt, speed, i) {
 function typeDeleter(speed) {
     return new Promise(resolve => {
         function deleteText() {
-            var txt = document.getElementById("job-text").innerHTML;
+            let txt = document.getElementById("job-text").innerHTML;
             if (txt.length > 0) {
                 document.getElementById("job-text").innerHTML = txt.slice(0, -1);
                 animationTimeout = setTimeout(deleteText, speed);
@@ -32,7 +32,7 @@ function typeDeleter(speed) {
 async function animationTyper() {
     clearAnimation();
     try {
-        var job_titles = ['Frontend Development', 'Backend Development', 'Fullstack Development', 'Machine Learning'];
+        let job_titles = ['Frontend Development', 'Backend Development', 'Fullstack Development', 'Machine Learning'];
 
         for (let index = 0; index < job_titles.length; index++) {
             await typeWriter(job_titles[index], 50, 0);

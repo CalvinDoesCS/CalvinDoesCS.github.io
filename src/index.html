@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Calvin Does CS</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png" />
-  <link rel="manifest" href="favicon_package_v0.16/site.webmanifest" />
-  <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/favicon_package_v0.16/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon_package_v0.16/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon_package_v0.16/favicon-16x16.png" />
+  <link rel="manifest" href="./public/favicon_package_v0.16/site.webmanifest" />
+  <link rel="mask-icon" href="./public/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
   <link rel="stylesheet" href="css/index.css" />
@@ -22,7 +22,7 @@
   <script>
     particlesJS.load(
       "particles-js",
-      "/build/assets/particlesjs-config.json",
+      "./public/assets/particlesjs-config.json",
       function () {
         console.log("callback - particles.js config loaded");
       }
@@ -37,7 +37,7 @@
       <div class="px-10 mx-auto max-w-7xl">
         <div class="flex justify-between">
           <a class="flex items-center py-2">
-            <img src="assets/pictures/logo.png" class="w-16 h-16 rounded-full" />
+            <img src="public/assets/pictures/logo.png" class="w-16 h-16 rounded-full" />
             <div class="pl-2 text-xl font-bold">CalvinDoesCS</div>
           </a>
           <ul class="items-center hidden py-5 space-x-5 text-lg font-bold tracking-wider lg:flex">
@@ -90,7 +90,7 @@
             <span id="job-text" class="text-red-500"></span>
             <span class="text-red-500">|</span>
           </p>
-          <script src="animationTyper.js"></script>
+          <script src="public/animationTyper.js"></script>
           <button
             class="px-10 py-3 text-lg text-white bg-blue-900 rounded-full shadow-lg shadow-blue-800 hover:bg-blue-950"
             onclick="location.href = '#about'">
@@ -121,18 +121,18 @@
           <div class="flex my-5 space-x-2">
             <div class="w-10 h-10 p-2 rounded-full bg-blue-950 hover:bg-blue-300">
               <a href="https://www.linkedin.com/in/calvin-tran-cs/">
-                <img src="assets/linkedin-logo.png" class="" />
+                <img src="public/assets/linkedin-logo.png" class="" />
               </a>
             </div>
             <div class="w-10 h-10 p-2 rounded-full bg-blue-950 hover:bg-blue-300">
               <a href="https://github.com/CalvinDoesCS">
-                <img src="assets/github-logo.png" class="" />
+                <img src="public/assets/github-logo.png" class="" />
               </a>
             </div>
           </div>
         </div>
         <!-- Rounded Picture -->
-        <img src="assets/pictures/cartoon_me.JPG"
+        <img src="public/assets/pictures/cartoon_me.JPG"
           class="object-cover rounded-full shadow-lg h-80 max-h-80 mb-2 md:mb-0 md:h-96 md:max-h-96 shadow-[#6F8FAF]" />
       </div>
     </div>
@@ -157,7 +157,7 @@
     <div class="py-10 mx-10 md:py-28">
       <div class="flex flex-col md:space-x-10 lg:space-x-28 md:flex-row">
         <div class="">
-          <img src="/build/assets/pictures/me.png" class="w-3/4 mx-auto mb-3 rounded-md shadow-lg" />
+          <img src="public/assets/pictures/me.png" class="w-3/4 mx-auto mb-3 rounded-md shadow-lg" />
         </div>
         <div class="flex flex-col mr-20 md:mr-0 md:text-left">
           <h3 class="text-2xl font-bold">I'm Calvin</h3>
@@ -204,7 +204,11 @@
               <div class="w-[800px] flex flex-col">
                 <button onclick="hideResume()" class="text-xl text-white place-self-end">X</button>
                 <div class="p-1">
-                  <embed src="/build/assets/Resume.pdf" class="w-full h-[600px]" />
+<<<<<<< HEAD:build/index.html
+                  <embed src="/build/assets/CalvinTran_Resume.pdf" class="w-full h-[600px]" />
+=======
+                  <embed src="/public/assets/CalvinTran_Resume.pdf" class="w-full h-[600px]" />
+>>>>>>> c178623 (Created Dockerfile):src/index.html
                 </div>
               </div>
             </div>
@@ -240,27 +244,27 @@
           <h3 class="py-2 text-3xl font-bold text-center">Proficient</h3>
           <div class="grid grid-cols-2 gap-3 py-2">
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-              <img src="assets/skill_logos/java-icon.png" class="w-20 h-20 mx-auto" />
+              <img src="public/assets/skill_logos/java-icon.png" class="w-20 h-20 mx-auto" />
               <div class="text-xl font-bold text-center">Java</div>
             </div>
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-              <img src="assets/skill_logos/react-icon.png" class="w-20 h-20 mx-auto" />
+              <img src="public/assets/skill_logos/react-icon.png" class="w-20 h-20 mx-auto" />
               <div class="text-xl font-bold text-center">ReactJS</div>
             </div>
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-              <img src="assets/skill_logos/tailwind-icon.png" class="w-20 h-20 mx-auto" />
+              <img src="public/assets/skill_logos/tailwind-icon.png" class="w-20 h-20 mx-auto" />
               <div class="text-xl font-bold text-center">TailwindCSS</div>
             </div>
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-              <img src="assets/skill_logos/mysql-icon.png" class="w-20 h-20 mx-auto" />
+              <img src="public/assets/skill_logos/mysql-icon.png" class="w-20 h-20 mx-auto" />
               <div class="text-xl font-bold text-center">MySQL</div>
             </div>
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-              <img src="assets/skill_logos/git-icon.png" class="w-20 h-20 mx-auto invert" />
+              <img src="public/assets/skill_logos/git-icon.png" class="w-20 h-20 mx-auto invert" />
               <div class="text-xl font-bold text-center">Git</div>
             </div>
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-              <img src="assets/skill_logos/html5-icon.png" class="w-20 h-20 mx-auto" />
+              <img src="public/assets/skill_logos/html5-icon.png" class="w-20 h-20 mx-auto" />
               <div class="text-xl font-bold text-center">HTML</div>
             </div>
           </div>
@@ -269,31 +273,31 @@
           <h3 class="py-2 text-3xl font-bold text-center">Familiar</h3>
           <div class="grid grid-cols-2 gap-3 py-2">
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-              <img src="assets/skill_logos/Js-icon.png" class="w-20 h-20 mx-auto" />
+              <img src="public/assets/skill_logos/Js-icon.png" class="w-20 h-20 mx-auto" />
               <div class="text-xl font-bold text-center">JavaScript</div>
             </div>
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-              <img src="assets/skill_logos/c_plus_plus-icon.png" class="w-20 h-20 mx-auto" />
+              <img src="public/assets/skill_logos/c_plus_plus-icon.png" class="w-20 h-20 mx-auto" />
               <div class="text-xl font-bold text-center">C/C++</div>
             </div>
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-              <img src="assets/skill_logos/chakra-ui-icon.png" class="w-20 h-20 mx-auto" />
+              <img src="public/assets/skill_logos/chakra-ui-icon.png" class="w-20 h-20 mx-auto" />
               <div class="text-xl font-bold text-center">CharkaUI</div>
             </div>
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-              <img src="assets/skill_logos/python-icon.png" class="w-20 h-20 mx-auto" />
+              <img src="public/assets/skill_logos/python-icon.png" class="w-20 h-20 mx-auto" />
               <div class="text-xl font-bold text-center">Python</div>
             </div>
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-              <img src="assets/skill_logos/bootstrap-5-logo-icon.png" class="w-20 h-20 mx-auto" />
+              <img src="public/assets/skill_logos/bootstrap-5-logo-icon.png" class="w-20 h-20 mx-auto" />
               <div class="text-xl font-bold text-center">Bootstrap</div>
             </div>
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-              <img src="assets/skill_logos/spring_boot-icon.png" class="w-20 h-20 mx-auto" />
+              <img src="public/assets/skill_logos/spring_boot-icon.png" class="w-20 h-20 mx-auto" />
               <div class="text-xl font-bold text-center">SpringBoot</div>
             </div>
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-              <img src="assets/skill_logos/ts-icon.png" class="w-20 h-20 mx-auto" />
+              <img src="public/assets/skill_logos/ts-icon.png" class="w-20 h-20 mx-auto" />
               <div class="text-xl font-bold text-center">Typescript</div>
             </div>
           </div>
@@ -302,11 +306,11 @@
           <h3 class="py-2 text-3xl font-bold text-center">Limited</h3>
           <div class="grid grid-cols-1 gap-2 p-3 py-2">
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-              <img src="assets/skill_logos/pandas-icon.png" class="w-20 h-20 mx-auto" />
+              <img src="public/assets/skill_logos/pandas-icon.png" class="w-20 h-20 mx-auto" />
               <div class="text-xl font-bold text-center">Pandas</div>
             </div>
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
-              <img src="assets/skill_logos/jquery-icon.png" class="w-20 h-20 mx-auto" />
+              <img src="public/assets/skill_logos/jquery-icon.png" class="w-20 h-20 mx-auto" />
               <div class="text-xl font-bold text-center">Jquery</div>
             </div>
           </div>
@@ -335,7 +339,8 @@
     <div class="justify-center pt-10 mx-10 lg:w-full lg:flex">
       <div
         class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64"
-        style="background-image: url(assets/pictures/gsu-image.jpg)" title="Picture of Georgia State University School">
+        style="background-image: url(public/assets/pictures/gsu-image.jpg)"
+        title="Picture of Georgia State University School">
       </div>
       <div
         class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
@@ -354,7 +359,7 @@
     <div class="justify-center pt-10 mx-10 lg:w-full lg:flex">
       <div
         class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64"
-        style="background-image: url(assets/pictures/CodeWithMosh-logo.jpg)" title="Coding With Mosh Logo">
+        style="background-image: url(public/assets/pictures/CodeWithMosh-logo.jpg)" title="Coding With Mosh Logo">
       </div>
       <div
         class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
@@ -373,7 +378,7 @@
     <div class="justify-center pt-10 mx-10 lg:w-full lg:flex">
       <div
         class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64"
-        style="background-image: url(assets/pictures/CodeWithMosh-logo.jpg)" title="Coding With Mosh Logo">
+        style="background-image: url(public/assets/pictures/CodeWithMosh-logo.jpg)" title="Coding With Mosh Logo">
       </div>
       <div
         class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
@@ -393,7 +398,7 @@
       <div
         class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64"
         style="
-            background-image: url(assets/skill_logos/spring_boot-icon.png);
+            background-image: url(public/assets/skill_logos/spring_boot-icon.png);
           " title="Spring Boot Chad Darby"></div>
       <div
         class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
@@ -471,7 +476,7 @@
         <div class="flex justify-center">
           <a href="https://github.com/CalvinDoesCS/visual-sorting-java"
             class="relative max-w-sm overflow-hidden bg-white rounded shadow-lg project-card">
-            <img class="w-full" src="assets/pictures/visual_sorter.png" alt="Visual Sorting Program Picture" />
+            <img class="w-full" src="public/assets/pictures/visual_sorter.png" alt="Visual Sorting Program Picture" />
             <div class="px-6 py-4">
               <div class="mb-2 text-xl font-bold">Visual Sorting Algorithm</div>
               <ul class="text-base list-disc">
@@ -498,7 +503,7 @@
         <div class="flex justify-center ">
           <a href="https://github.com/CalvinDoesCS/game-hub"
             class="relative max-w-sm overflow-hidden bg-white rounded shadow-lg project-card">
-            <img class="w-full" src="assets/pictures/game_hub.png" alt="Game Hub Picture" />
+            <img class="w-full" src="public/assets/pictures/game_hub.png" alt="Game Hub Picture" />
             <div class="px-6 py-4">
               <div class="mb-2 text-xl font-bold">Game Hub</div>
               <ul class="text-base list-disc">
@@ -667,7 +672,7 @@
           <h1 class="text-5xl font-bold uppercase">
             Send me a
             <br />
-            message 
+            message
           </h1>
         </div>
         <form action="https://formspree.io/f/xpzvdwby" method="POST">

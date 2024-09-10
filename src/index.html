@@ -12,8 +12,8 @@
   <link rel="mask-icon" href="./public/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@400;700&display=swap"
@@ -237,6 +237,7 @@
     <div class="w-3/4 mx-auto mt-10">
       <div class="grid grid-cols-1 gap-10 py-10 md:grid-cols-2 xl:grid-cols-3">
         <div class="p-4 bg-gray-800 bg-opacity-30 rounded-xl">
+          <!-- Proficient Skills -->
           <h3 class="py-2 text-3xl font-bold text-center">Proficient</h3>
           <div class="grid grid-cols-2 gap-3 py-2">
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
@@ -265,6 +266,7 @@
             </div>
           </div>
         </div>
+        <!-- Familiar Skills -->
         <div class="p-4 bg-gray-800 bg-opacity-30 rounded-xl">
           <h3 class="py-2 text-3xl font-bold text-center">Familiar</h3>
           <div class="grid grid-cols-2 gap-3 py-2">
@@ -298,7 +300,8 @@
             </div>
           </div>
         </div>
-        <div class="p-4 bg-gray-800 md:mx-36 md:col-span-2 xl:mx-0 xl:col-span-1 bg-opacity-30 rounded-xl">
+        <!-- Limited Skills -->
+        <div class="p-4 bg-gray-800 bg-opacity-30 rounded-xl">
           <h3 class="py-2 text-3xl font-bold text-center">Limited</h3>
           <div class="grid grid-cols-1 gap-2 p-3 py-2">
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
@@ -311,6 +314,21 @@
             </div>
           </div>
         </div>
+        <!-- Container & CI/Cl Skills -->
+        <div class="col-start-2 p-4 bg-gray-800 bg-opacity-30 rounded-xl">
+          <h3 class="py-2 text-3xl font-bold text-center">Container & CI&CD</h3>
+          <div class="grid grid-cols-1 gap-2 p-3 py-2">
+            <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
+              <img src="public/assets/skill_logos/docker-icon.png" class="w-20 h-20 mx-auto" />
+              <div class="text-xl font-bold text-center">Docker</div>
+            </div>
+            <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
+              <img src="public/assets/skill_logos/googlecloud-icon.png" class="w-20 h-20 mx-auto" />
+              <div class="text-xl font-bold text-center">GCloud & Google Build Tools</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -349,6 +367,25 @@
           <p class="text-gray-900">GPA: 4.33/4.5</p>
           <p class="mb-5 text-gray-600">Atlanta, Georgia</p>
           <p class="text-xl text-green-800">August 2020 - August 2023 | Completed</p>
+        </div>
+      </div>
+    </div>
+    <div class="justify-center pt-10 mx-10 lg:w-full lg:flex">
+      <div
+        class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64"
+        style="background-image: url(public/assets/skill_logos/Meta-icon.png)" title="Meta Icon">
+      </div>
+      <div
+        class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
+        <div class="mb-4">
+          <div class="text-xl font-bold text-gray-900">
+            Front-End Developer | Certification
+          </div>
+          <div class="mb-2 text-lg font-bold text-gray-900">META</div>
+        </div>
+        <div class="text-sm">
+          <p class="mb-5 text-gray-600">Online Course</p>
+          <p class="text-xl text-green-800">May 2024 - July 2024 | Completed</p>
         </div>
       </div>
     </div>
@@ -547,15 +584,14 @@
           <div class="relative">
             <!-- Middle Line  -->
             <div class="absolute hidden w-1 h-full transform -translate-x-1/2 bg-orange-500 lg:block left-1/2">
-
             </div>
             <div class="space-y-2 lg:space-y-4">
               <div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center ">
                   <div class="flex items-center justify-start w-full mx-auto">
-                    <div class="w-full lg:w-1/2 lg:pr-8">
+                    <div class="w-full lg:w-1/2 lg:pr-8 ">
                       <div class="relative flex-1 mb-10 bg-orange-200 rounded shadow lg:mb-8">
-                        <div class="absolute inline-block w-4 overflow-hidden -translate-y-1/2 top-3 -right-4">
+                        <div class="absolute inline-block w-4 -translate-y-1/2 top-3 -right-4">
                           <div
                             class="hidden h-10 origin-bottom-left transform -rotate-45 bg-orange-200 shadow lg:block">
                           </div>
@@ -563,48 +599,79 @@
                         <div class="relative z-1">
                           <div class="flex flex-wrap items-center">
                             <div class="p-4 md:w-1/4 ">
-                              <span class="text-lg text-black ">September</span>
-                              <span class="text-lg text-black ">2021 - Present</span>
+                              <span class="text-lg text-black ">January</span>
+                              <span class="text-lg text-black ">2024 - Present</span>
                             </div>
                             <div class="flex-1 p-4 pr-4 border-l border-gray-800 ">
                               <p class="flex mb-2 text-xl font-bold text-black ">
-                                Waiter <span class="pl-3">| Le Mekong Vietnamese Cusine</span></p>
+                                Java Developer <span class="pl-3">| Dream Viet LLC</span></p>
 
-                              <p class="text-black">
-                              <ul class="pl-2 list-disc">
-                                <li>
-                                  Consistently surpassed sales targets by 12% through adept up-selling of appetizers,
-                                  drinks, and entrees, catering to patron tastes and interests.
+                              <p class="pl-2">Assisting a small team in developing back-office applications to bridge
+                                the gap between
+                                clients and technology for a salon chain. Building
+                                back-office applications for a salon chain that streamline operations, improve client
+                                experiences, and enhance overall efficiency. </p>
+                              <div class="w-3/4 ml-auto mr-0 text-right text-white">
+                                <button
+                                  class="px-4 py-2 font-semibold text-white transition duration-300 ease-in-out transform rounded-full shadow-lg bg-gradient-to-r from-orange-400 to-orange-600 hover:from-orange-500 hover:to-orange-700 hover:scale-105">
+                                  For more Information &gt;
+                                </button>
+                              </div>
+                              <ul class="hidden pl-2 list-disc">
+                                <li><span class="font-bold">Appointment Management</span> – a booking system to allow
+                                  clients to book, reschedule, or
+                                  cancel appointments online. Integration with a calendar system and the salon chain
+                                  home page for real-time availability.</li>
+                                <li><span class="font-bold">CRM Management</span> – store and manage client information,
+                                  including contact details,3
+                                  appointment history, preferences, and loyalty program, sending out text messages for
+                                  promotion.</li>
+                                <li><span class="font-bold">Staff Management</span> – maintain a life cycle for managing
+                                  staff schedule, and
+                                  availability.</li>
+                                <li><span class="font-bold">Integration with 3rd Party System</span> – integrate with
+                                  Stripe checkout for electronic
+                                  transactions.</li>
+                                <li><span class="font-bold">POS System </span>– maintain and enhance the functionality
+                                  of the POS system.</li>
+                                <li><span class="font-bold">Salon Data Content Management</span> – enhance the company
+                                  website and offerings.</li>
+                                <li><span class="font-bold">IoT Integration</span> – building an in-house digital menu
+                                  that works with an IoT device.
                                 </li>
                                 <li>
-                                  Manage an average of 20 tables per shift, ensuring timely order-taking and delivery
+                                  <span class="font-bold">Technical Environment</span>: Gcloud CLI, SpringBoot, OpenAPI
+                                  3, Swagger, HTML/CSS, React JS,
+                                  Javascript, Python, PHP, MySQL
                                 </li>
                               </ul>
-                              </p>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div
-                    class="absolute flex items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-orange-400 rounded-full left-1/2 lg:translate-y-[4px]">
-                    <svg fill="#000000" width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve">
-                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                      <g id="SVGRepo_iconCarrier">
-                        <path
-                          d="M56.99,13.5H55v-3H45v3h-4V7.706C41,5.938,39.562,4.5,37.794,4.5H22.206C20.438,4.5,19,5.938,19,7.706V13.5h-4v-3H5v3H3.01 C1.351,13.5,0,14.851,0,16.51v35.98c0,1.659,1.351,3.01,3.01,3.01H8h2h40h2h1h3.99c1.659,0,3.01-1.351,3.01-3.01V16.51 C60,14.851,58.649,13.5,56.99,13.5z M21,7.706C21,7.041,21.541,6.5,22.206,6.5h15.588C38.459,6.5,39,7.041,39,7.706V13.5H21V7.706z M8,53.5v-38h2v38H8z M50,53.5v-38h2v38H50z">
-                        </path>
-                      </g>
-                    </svg>
-
-                  </div>
                 </div>
               </div>
+            </div>
+            <div
+              class="absolute flex items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-orange-400 rounded-full left-1/2 lg:translate-y-[4px]">
+              <svg fill="#000000" width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M56.99,13.5H55v-3H45v3h-4V7.706C41,5.938,39.562,4.5,37.794,4.5H22.206C20.438,4.5,19,5.938,19,7.706V13.5h-4v-3H5v3H3.01 C1.351,13.5,0,14.851,0,16.51v35.98c0,1.659,1.351,3.01,3.01,3.01H8h2h40h2h1h3.99c1.659,0,3.01-1.351,3.01-3.01V16.51 C60,14.851,58.649,13.5,56.99,13.5z M21,7.706C21,7.041,21.541,6.5,22.206,6.5h15.588C38.459,6.5,39,7.041,39,7.706V13.5H21V7.706z M8,53.5v-38h2v38H8z M50,53.5v-38h2v38H50z">
+                  </path>
+                </g>
+              </svg>
 
-              <!-- Right section
+            </div>
+          </div>
+        </div>
+
+        <!-- Right section
               <div>
                 <div class="flex flex-col items-center">
                   <div class="flex items-center justify-end w-full mx-auto">
@@ -649,10 +716,10 @@
                   </div>
                 </div>
               </div> -->
-            </div>
-          </div>
-        </div>
       </div>
+    </div>
+    </div>
+    </div>
   </section>
   <!--  Contact Section  -->
   <section id="contact" class="bg-cyan-100 section">

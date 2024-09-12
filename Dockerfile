@@ -6,7 +6,7 @@ WORKDIR /node
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Install dependencies
+# Install production dependencies
 RUN npm install --only=production
 
 # Copy the rest of your application code
@@ -16,4 +16,4 @@ COPY . .
 EXPOSE 3000
 
 # Command to start your application in production
-CMD [ "npm", "start-prod" ]
+CMD ["npm", "run", "start-prod"]

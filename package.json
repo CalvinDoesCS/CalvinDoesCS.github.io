@@ -6,7 +6,8 @@
   "scripts": {
     "tailwind": "tailwindcss -i ./src/input.css -o ./src/css/style.css --watch",
     "prettier": "npx prettier --write **/build/*.html",
-    "start": "browser-sync start --server 'src' --files 'src/**/*' --no-ui --port 3000 --reload-delay 10"
+    "start": "browser-sync start --server 'src' --files 'src/**/*' --no-ui --port 3000 --reload-delay 10",
+    "start-prod": "node server.js"
   },
   "keywords": [],
   "author": "",

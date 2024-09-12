@@ -3,12 +3,17 @@ FROM node:latest
 # Create app directory
 WORKDIR /node
 
+# Copy package.json and package-lock.json
 COPY package*.json ./
 
-RUN npm install
-# If you are building your code for production
-# RUN npm ci --only=production
+# Install dependencies
+RUN npm install --only=production
+
+# Copy the rest of your application code
 COPY . .
 
+# Expose port
 EXPOSE 3000
-CMD [ "npm", "start" ]
+
+# Command to start your application in production
+CMD [ "npm", "start-prod" ]

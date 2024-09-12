@@ -21,7 +21,7 @@ const Myclass = plugin(function ({ addUtilities }) {
 
 
 module.exports = {
-  content: ["./src/*{html,js}"],
+  content: ["./src/*{html,js}", "./src/**/*.js"],
   theme: {
     extend: {
       keyframes: {

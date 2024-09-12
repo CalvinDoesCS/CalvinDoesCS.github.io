@@ -20,6 +20,7 @@
     rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <script src="js/index.js"></script>
   <script>
     particlesJS.load(
       "particles-js",
@@ -78,12 +79,12 @@
       <div class="flex flex-col-reverse items-center mt-10 justify-evenly lg:mt-0 lg:flex-row">
         <!-- Introudction Header -->
         <div class="flex-col">
-          <h2 class="text-5xl md:text-6xl text-bold animate-slide_right md:animate-slide_down">
+          <h2 class="text-5xl md:text-6xl text-bold slideRight animationWait">
             Hi There,
           </h2>
           <div class="flex mt-3 space-x-1 text-5xl md:text-6xl text-bold">
-            <h2 class="animate-slide_right">I'm Calvin</h2>
-            <span class="text-blue-700 animate-slide_left">Tran</span>
+            <h2 class="slideRight animationWait">I'm Calvin</h2>
+            <span class="text-blue-700 slideLeft animationWait">Tran</span>
           </div>
 
           <p class="py-4 text-2xl md:text-3xl text-bold">
@@ -316,7 +317,7 @@
           </div>
         </div>
         <!-- Container & CI/Cl Skills -->
-        <div class="col-start-2 p-4 bg-gray-800 bg-opacity-30 rounded-xl">
+        <div class="p-4 bg-gray-800 xl:col-start-2 bg-opacity-30 rounded-xl">
           <h3 class="py-2 text-3xl font-bold text-center">Container & CI&CD</h3>
           <div class="grid grid-cols-1 gap-2 p-3 py-2">
             <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
@@ -351,11 +352,29 @@
         <span class="text-purple-500">Education</span>
       </h2>
     </div>
-    <div class="justify-center pt-10 mx-10 lg:w-full lg:flex">
+    <div class="justify-center pt-10 mx-10 slideRight2 animationWait lg:w-full lg:flex ">
       <div
-        class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64"
-        style="background-image: url(public/assets/pictures/gsu-image.jpg)"
-        title="Picture of Georgia State University School">
+        class="flex-none object-cover object-bottom h-48 overflow-hidden text-center lg:rounded-l-md lg:h-44 lg:w-64">
+        <img src="public/assets/pictures/ga-tech-logo.png" alt="gatech-logo" class="w-full h-full">
+      </div>
+      <div
+        class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
+        <div class="mb-4">
+          <div class="text-xl font-bold text-gray-900">Georgia Institute of Technology</div>
+          <div class="mb-2 text-lg font-bold text-gray-900">Master of Computer Science</div>
+          <p class="text-base text-gray-700">Still Choosing Concentration</p>
+        </div>
+        <div class="text-sm">
+          <p class="text-gray-900">GPA: ???</p>
+          <p class="mb-5 text-gray-600">Atlanta, Georgia</p>
+          <p class="text-xl text-green-800">Spring 2025 - ??? | Ongoing</p>
+        </div>
+      </div>
+    </div>
+    <div class="justify-center pt-10 mx-10 slideLeft2 animationWait lg:w-full lg:flex">
+      <div
+        class="flex-none object-cover object-bottom h-48 overflow-hidden text-center shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64">
+        <img src="public/assets/pictures/gsu-image.jpg" alt="gsu-image" class="w-full h-full">
       </div>
       <div
         class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
@@ -371,10 +390,10 @@
         </div>
       </div>
     </div>
-    <div class="justify-center pt-10 mx-10 lg:w-full lg:flex">
+    <div class="justify-center pt-10 mx-10 slideRight2 animationWait lg:w-full lg:flex">
       <div
-        class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64"
-        style="background-image: url(public/assets/skill_logos/Meta-icon.png)" title="Meta Icon">
+        class="flex-none object-cover object-bottom h-48 overflow-hidden text-center shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64">
+        <img src="public/assets/skill_logos/meta-logo.svg" alt="meta-image" class="w-full h-full">
       </div>
       <div
         class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
@@ -390,10 +409,10 @@
         </div>
       </div>
     </div>
-    <div class="justify-center pt-10 mx-10 lg:w-full lg:flex">
+    <div class="justify-center pt-10 mx-10 slideLeft2 animationWait lg:w-full lg:flex">
       <div
-        class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64"
-        style="background-image: url(public/assets/pictures/CodeWithMosh-logo.jpg)" title="Coding With Mosh Logo">
+        class="flex-none object-cover object-bottom h-48 overflow-hidden text-center shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64">
+        <img src="public/assets/pictures/CodeWithMosh-logo.jpg" alt="meta-image" class="w-full h-full">
       </div>
       <div
         class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
@@ -409,10 +428,10 @@
         </div>
       </div>
     </div>
-    <div class="justify-center pt-10 mx-10 lg:w-full lg:flex">
+    <div class="justify-center pt-10 mx-10 slideRight2 animationWait lg:w-full lg:flex">
       <div
-        class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64"
-        style="background-image: url(public/assets/pictures/CodeWithMosh-logo.jpg)" title="Coding With Mosh Logo">
+        class="flex-none object-cover object-bottom h-48 overflow-hidden text-center shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64">
+        <img src="public/assets/pictures/CodeWithMosh-logo.jpg" alt="meta-image" class="w-full h-full">
       </div>
       <div
         class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
@@ -428,12 +447,11 @@
         </div>
       </div>
     </div>
-    <div class="justify-center py-10 mx-10 lg:w-full lg:flex">
+    <div class="justify-center py-10 mx-10 slideLeft2 animationWait lg:w-full lg:flex">
       <div
-        class="flex-none h-48 overflow-hidden text-center bg-bottom bg-cover shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64"
-        style="
-            background-image: url(public/assets/skill_logos/spring_boot-icon.png);
-          " title="Spring Boot Chad Darby"></div>
+        class="flex-none object-cover h-48 overflow-hidden text-center shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64">
+        <img src="public/assets/skill_logos/spring_boot-icon.png" alt="meta-image" class="w-full h-full">
+      </div>
       <div
         class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
         <div class="mb-4">
@@ -450,8 +468,8 @@
     </div>
   </section>
   <!--  Projects Section  -->
-  <section id="projects" class="h-[800px] bg-slate-900 section">
-    <div class="flex justify-center pt-3 space-x-2">
+  <section id="projects" class="min-h-[80vh] px-5 pb-20 lg:px-0 bg-slate-900 section overflow-hidden">
+    <div class="flex justify-center pt-3 space-x-2 justify-self-start">
       <svg class="w-10 h-10" viewBox="0 0 24 24" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -478,12 +496,12 @@
         <span class="text-purple-500">Projects</span>
       </h2>
     </div>
-    <div class="flex items-center justify-center mt-20 ">
+    <div class="flex justify-center mt-36">
       <div class="w-full lg:w-1/3 mySwiper">
         <div class="swiper-wrapper">
           <!-- Calorie Tracker Card -->
-          <a href="https://github.com/CalvinDoesCS/CalorieTracker"
-            class="relative overflow-hidden bg-white rounded-lg shadow-lg max-w-xlg h-80 swiper-slide">
+          <div class="relative overflow-hidden bg-white rounded-lg shadow-lg max-w-xlg h-80 swiper-slide"
+            onclick="showCardInfo();">
             <img class="w-full "
               src="https://raw.githubusercontent.com/CalvinDoesCS/CalorieTracker/main/CalorieTracker.png"
               alt="Calorie Tracker Website" />
@@ -523,10 +541,10 @@
                   React Hook Forms</div>
               </div>
             </div>
-          </a>
+          </div>
           <!-- Game Hub Card -->
-          <a href="https://github.com/CalvinDoesCS/game-hub"
-            class="relative overflow-hidden bg-white rounded-lg shadow-lg max-w-xlg h-80 swiper-slide">
+          <div class="relative overflow-hidden bg-white rounded-lg shadow-lg max-w-xlg h-80 swiper-slide"
+            onclick="showCardInfo();">
             <img class="w-full" src="public/assets/pictures/game_hub.png" alt="Game Hub Picture" />
             <div class="flex flex-row items-center justify-between px-2 py-4">
               <div class="mb-2 text-xl font-bold">Game Hub</div>
@@ -557,10 +575,10 @@
                 </div>
               </div>
             </div>
-          </a>
+          </div>
           <!-- Visual Sorting Algorithm Card -->
-          <a href="https://github.com/CalvinDoesCS/visual-sorting-java"
-            class="relative overflow-hidden bg-white rounded-lg shadow-lg max-w-xlg h-80 swiper-slide">
+          <div class="relative overflow-hidden bg-white rounded-lg shadow-lg max-w-xlg h-80 swiper-slide"
+            onclick="showCardInfo();">
             <img class="w-full" src="public/assets/pictures/visual_sorter.png" alt="Visual Sorting Program Picture" />
             <div class="flex flex-row items-center justify-between px-2 py-4 ml-5">
               <div class="mb-2 text-xl font-bold">Visual Sorting Algorithm</div>
@@ -575,7 +593,7 @@
                 </div>
               </div>
             </div>
-          </a>
+          </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -583,9 +601,184 @@
         <div class="swiper-button-next"> </div>
         <div class="swiper-button-prev"> </div>
       </div>
-
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <div id="info-container" class="hidden max-w-5xl p-4 mx-auto mt-20 overflow-hidden bg-white rounded-lg shadow-lg">
+      <div id="slide-1" class="hidden">
+        <div class="p-6">
+          <div class="flex flex-row" style="gap:2rem">
+            <div class="flex flex-col gap-3">
+              <h1 class="mb-2 text-2xl font-bold text-gray-800">Calorie Tracker</h1>
+              <h2 class="mb-4 text-gray-600 text-md">
+                Track your daily calorie intake effortlessly with our Calorie Tracker App.
+                This application is built using React for the frontend, Spring Boot for the backend,
+                and a variety of libraries including Chakra UI, Zustand, React Hook Forms, and React Router DOM
+                for an efficient and user-friendly experience.
+              </h2>
+              <div class="mt-2">
+                <a href="https://github.com/CalvinDoesCS/CalorieTracker"
+                  class="flex items-center justify-center w-48 px-2 py-2 text-center transition-colors delay-[5ms] bg-blue-400 rounded-full hover:bg-blue-500 hover:scale-105">
+                  More Information
+                  <span class="ml-2">&#x2192;</span>
+                </a>
+              </div>
+            </div>
+            <div class="border-l border-black"> </div>
+            <div class="text-sm">
+              <ul class="space-y-2">
+                <li class="text-gray-700">
+                  <strong>Efficient Calorie Tracking:</strong> Log your daily meals and track your calorie intake
+                  seamlessly.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Intuitive User Interface:</strong> Utilizes Chakra UI for a sleek and responsive design.
+                </li>
+                <li class="text-gray-700">
+                  <strong>State Management:</strong> Zustand is employed for streamlined state management within the
+                  app.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Form Handling:</strong> React Hook Forms simplifies form management for a smoother user
+                  experience.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Easy Navigation:</strong> Leveraging React Router DOM for seamless transitions between app
+                  sections.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Token-based Authentication:</strong> Implements access tokens and refresh tokens for secure
+                  user authentication and authorization.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="slide-2" class="hidden">
+        <div class="p-6">
+          <div class="flex flex-row" style="gap:2rem">
+            <div class="flex flex-col gap-3">
+              <h1 class="mb-2 text-2xl font-bold text-gray-800">Game Hub</h1>
+              <h2 class="mb-4 text-gray-600 text-md">
+                GameHub is a video game discovery web app that helps you find new and interesting games to play. With
+                GameHub,
+                you can search for games by platform, genre, and more.
+              </h2>
+              <div class="flex flex-col gap-4 mt-2">
+                <a href="https://github.com/CalvinDoesCS/CalorieTracker"
+                  class="flex items-center justify-center w-48 px-2 py-2 text-center transition-colors delay-[5ms] bg-blue-400 rounded-full hover:bg-blue-500 hover:scale-105">
+                  Visit Github Repo
+                  <span class="ml-2">&#x2192;</span>
+                </a>
+                <a href="https://game-hub-psi-eight-85.vercel.app/"
+                  class="flex items-center justify-center w-48 px-2 py-2 text-center transition-colors delay-[5ms] bg-blue-400 rounded-full hover:bg-blue-500 hover:scale-105">
+                  Visit Website
+                  <span class="ml-2">&#x2192;</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Divider between text sections -->
+            <div class="border-l border-black"></div>
+
+            <!-- List Section -->
+            <div class="text-sm">
+              <ul class="space-y-2">
+                <li class="text-gray-700">
+                  <strong>Build Front-end Apps with React and TypeScript:</strong> Develop scalable and maintainable
+                  applications using TypeScript with React.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Build Reusable Functional Components:</strong> Create modular, reusable components that follow
+                  best practices.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Style Your Components:</strong> Use vanilla CSS, CSS modules, and CSS-in-JS for styling
+                  components in your React apps.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Manage Component State:</strong> Effectively manage state in your components using hooks and
+                  state management libraries.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Build Forms with React Hook Forms:</strong> Implement efficient form handling in your app with
+                  React Hook Forms.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Form Validation with Zod:</strong> Use Zod to enforce schema-based form validation for robust
+                  input validation.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Connect Your React Apps to the Backend:</strong> Integrated my front-end with a backend API to
+                  exchange data.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Deploy Your React Apps:</strong> Deployed my React applications to hosting services like
+                  Vercel or Netlify.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="slide-3" class="hidden">
+        <div class="p-6">
+          <div class="flex flex-row" style="gap:2rem">
+            <div class="flex flex-col gap-3">
+              <h1 class="mb-2 text-2xl font-bold text-gray-800">Visual Sorting Algorithm</h1>
+              <h2 class="mb-4 text-gray-600 text-md">
+                This project visualizes various sorting algorithms to help understand their behavior and efficiency.
+                The purpose of a visual sorting algorithm project is to provide a visual representation of how different
+                sorting algorithms operate on a set of data.
+                It provides as an educational tool and to visualize the time complexity of each sorting algorithms.
+              </h2>
+              <div class="flex flex-col gap-4 mt-2">
+                <a href="https://github.com/CalvinDoesCS/visual-sorting-java"
+                  class="flex items-center justify-center w-48 px-2 py-2 text-center transition-colors delay-[5ms] bg-blue-400 rounded-full hover:bg-blue-500 hover:scale-105">
+                  Visit Github Repo
+                  <span class="ml-2">&#x2192;</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Divider between text sections -->
+            <div class="border-l border-black"></div>
+
+            <!-- List Section -->
+            <div class="text-sm">
+              <ul class="space-y-2">
+                <li class="text-gray-700">
+                  <strong>Real-time Visualization of Sorting Algorithms:</strong> Provides a visual representation of
+                  various sorting algorithms.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Adjustable Sorting Algorithms:</strong> Users can choose between Bubble Sort, Selection Sort,
+                  Insertion Sort, Merge Sort, Quick Sort, etc.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Customizable Array Size:</strong> Users can change the size of the array to observe how
+                  algorithms perform with different datasets.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Speed Control:</strong> Adjustable animation speed to observe the sorting process at various
+                  speeds.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Play and Pause Animation:</strong> Users can control the animation flow for a more interactive
+                  experience.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Generate New Array:</strong> Button to generate a new random array for sorting.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Different Sorting Algorithms:</strong> Includes QuickSort, BubbleSort, MergeSort, and others.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src=" https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper('.mySwiper', { // Corrected selector
         effect: "coverflow",
@@ -607,8 +800,17 @@
           el: '.swiper-pagination',
           clickable: true,
         },
-      });
+        on: {
+          init: () => {
+            updateInformation(0);
+          },
+          slideChange: () => {
+            updateInformation(swiper.activeIndex);
+          },
+        },
+      }); 
     </script>
+
   </section>
   <!--  Experience Section  -->
   <section id="experience" class="min-h-screen section">
@@ -641,7 +843,7 @@
                 <div class="flex flex-col items-center ">
                   <div class="flex items-center justify-start w-full mx-auto">
                     <div class="w-full lg:w-1/2 lg:pr-8 ">
-                      <div class="relative flex-1 mb-10 bg-orange-200 rounded shadow lg:mb-8">
+                      <div class="relative flex-1 mb-10 bg-orange-200 rounded shadow lg:mb-8 slideRight animationWait">
                         <div class="absolute inline-block w-4 -translate-y-1/2 top-3 -right-4">
                           <div
                             class="hidden h-10 origin-bottom-left transform -rotate-45 bg-orange-200 shadow lg:block">
@@ -1061,6 +1263,9 @@
       }, 20);
     }
   </script>
+  <script src="js/waitAnimation.js"></script>
+  <div class="animate-slide_down animate-slide_right animate-slide_left animate-slide_right2 animate-slide_left2">
+  </div>
 </body>
 
 </html>

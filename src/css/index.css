@@ -23,3 +23,9 @@ body {
 .swiper-button-prev:hover {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
+/* Just for animation so css can appear easier dev stuff */
+.animationWait {
+  will-change: transform;
+  visibility: hidden;
+  transform: translateZ(0);
+}

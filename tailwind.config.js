@@ -36,15 +36,26 @@ module.exports = {
         slide_left: {
           '0%': { transform: 'translateX(200%)'},
           '100%': { transform: 'translateX(0)' },
+        },
+        slide_right2: {
+          '0%': { transform: 'translateX(-100%)'},
+          '100%': { transform: 'translateX(0)' },
+        },
+        slide_left2: {
+          '0%': { transform: 'translateX(100%)'},
+          '100%': { transform: 'translateX(0)' },
         }
       },
       animation: {
         'slide_down': 'slide_down 2s linear 1',
         'slide_right': 'slide_right 2s linear 1',
         'slide_left': 'slide_left 2s linear 1',
+        'slide_left2': 'slide_left2 2s ease-out 1',
+        'slide_right2': 'slide_right2 2s ease-out 1',
       },
     },
   },
   plugins: [Myclass],
+  
 }
 

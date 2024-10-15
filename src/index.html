@@ -24,7 +24,7 @@
   <script>
     particlesJS.load(
       "particles-js",
-      "./public/assets/particlesjs-config.json",
+      "./particlesjs-config.json",
       function () {
         console.log("callback - particles.js config loaded");
       }
@@ -123,12 +123,12 @@
           <div class="flex my-5 space-x-2">
             <div class="w-10 h-10 p-2 rounded-full bg-blue-950 hover:bg-blue-300">
               <a href="https://www.linkedin.com/in/calvin-tran-cs/">
-                <img src="public/assets/linkedin-logo.png" class="" />
+                <img src="public/assets/media_logos/linkedin-logo.png" class="" />
               </a>
             </div>
             <div class="w-10 h-10 p-2 rounded-full bg-blue-950 hover:bg-blue-300">
               <a href="https://github.com/CalvinDoesCS">
-                <img src="public/assets/github-logo.png" class="" />
+                <img src="public/assets/media_logos/github-logo.png" class="" />
               </a>
             </div>
           </div>
@@ -206,7 +206,7 @@
               <div class="w-[800px] flex flex-col">
                 <button onclick="hideResume()" class="text-xl text-white place-self-end">X</button>
                 <div class="p-1">
-                  <embed src="./public/assets/CalvinTran_Resume.pdf" class="w-full h-[600px]" />
+                  <embed src="./public/assets/CalvinTran_Resume_10_09_2024.pdf" class="w-full h-[600px]" />
                 </div>
               </div>
             </div>
@@ -300,6 +300,10 @@
               <img src="public/assets/skill_logos/ts-icon.png" class="w-20 h-20 mx-auto" />
               <div class="text-xl font-bold text-center">Typescript</div>
             </div>
+            <div class="p-2 bg-gray-900 shadow-lg rounded-xl">
+              <img src="public/assets/skill_logos/expo-logo.svg" class="w-20 h-20 p-2 mx-auto bg-white rounded-full" />
+              <div class="text-xl font-bold text-center">Expo</div>
+            </div>
           </div>
         </div>
         <!-- Limited Skills -->
@@ -353,9 +357,8 @@
       </h2>
     </div>
     <div class="justify-center pt-10 mx-10 slideRight2 animationWait lg:w-full lg:flex ">
-      <div
-        class="flex-none object-cover object-bottom h-48 overflow-hidden text-center lg:rounded-l-md lg:h-44 lg:w-64">
-        <img src="public/assets/pictures/ga-tech-logo.png" alt="gatech-logo" class="w-full h-full">
+      <div class="flex-none object-cover h-48 overflow-hidden text-center border-2 object-fit lg:rounded-l-md lg:h-44 lg:w-64">
+        <img src="public/assets/education/ga-tech-logo.png" alt="gatech-logo" class="w-full h-full">
       </div>
       <div
         class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
@@ -374,7 +377,7 @@
     <div class="justify-center pt-10 mx-10 slideLeft2 animationWait lg:w-full lg:flex">
       <div
         class="flex-none object-cover object-bottom h-48 overflow-hidden text-center shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64">
-        <img src="public/assets/pictures/gsu-image.jpg" alt="gsu-image" class="w-full h-full">
+        <img src="public/assets/education/gsu-image.jpg" alt="gsu-image" class="w-full h-full">
       </div>
       <div
         class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
@@ -412,7 +415,7 @@
     <div class="justify-center pt-10 mx-10 slideLeft2 animationWait lg:w-full lg:flex">
       <div
         class="flex-none object-cover object-bottom h-48 overflow-hidden text-center shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64">
-        <img src="public/assets/pictures/CodeWithMosh-logo.jpg" alt="meta-image" class="w-full h-full">
+        <img src="public/assets/education/CodeWithMosh-logo.jpg" alt="meta-image" class="w-full h-full">
       </div>
       <div
         class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
@@ -431,7 +434,7 @@
     <div class="justify-center pt-10 mx-10 slideRight2 animationWait lg:w-full lg:flex">
       <div
         class="flex-none object-cover object-bottom h-48 overflow-hidden text-center shadow-md rounded-t-md lg:rounded-l-md lg:h-auto lg:w-64">
-        <img src="public/assets/pictures/CodeWithMosh-logo.jpg" alt="meta-image" class="w-full h-full">
+        <img src="public/assets/education/CodeWithMosh-logo.jpg" alt="meta-image" class="w-full h-full">
       </div>
       <div
         class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b lg:w-1/2 lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
@@ -545,7 +548,7 @@
           <!-- Game Hub Card -->
           <div class="relative overflow-hidden bg-white rounded-lg shadow-lg max-w-xlg h-80 swiper-slide"
             onclick="showCardInfo();">
-            <img class="w-full" src="public/assets/pictures/game_hub.png" alt="Game Hub Picture" />
+            <img class="w-full" src="public/assets/projects/game_hub.png" alt="Game Hub Picture" />
             <div class="flex flex-row items-center justify-between px-2 py-4">
               <div class="mb-2 text-xl font-bold">Game Hub</div>
               <div class="flex flex-wrap items-center gap-1">
@@ -579,7 +582,7 @@
           <!-- Visual Sorting Algorithm Card -->
           <div class="relative overflow-hidden bg-white rounded-lg shadow-lg max-w-xlg h-80 swiper-slide"
             onclick="showCardInfo();">
-            <img class="w-full" src="public/assets/pictures/visual_sorter.png" alt="Visual Sorting Program Picture" />
+            <img class="w-full" src="public/assets/projects/visual_sorter.png" alt="Visual Sorting Program Picture" />
             <div class="flex flex-row items-center justify-between px-2 py-4 ml-5">
               <div class="mb-2 text-xl font-bold">Visual Sorting Algorithm</div>
               <div class="flex flex-wrap items-center gap-1">

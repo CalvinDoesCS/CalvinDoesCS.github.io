@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer components {
+  body {
+    @apply font-roboto;
+  }
   .nav-btn {
-    @apply relative w-fit block hover:text-blue-800 hover:transition-colors hover:ease-in hover:duration-300 after:block after:content-[''] after:absolute after:h-[3px] after:bg-blue-800 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
+    @apply text-white relative w-fit block hover:text-blue-800 hover:transition-colors hover:ease-in hover:duration-300 after:block after:content-[''] after:absolute after:h-[3px] after:bg-blue-800 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
   }
   .active {
     @apply text-yellow-400;

@@ -1,14 +1,9 @@
 function sleep(ms){
     return new Promise((resolve)=> setTimeout(resolve,ms));
-}
-const phrases = ["Frontend Development", "Backend Developement", "Fullstack Development", "Machine Learning"];
-const el = document.getElementById("job-text");
-
-let sleepTime = 100;
-
-let currPhraseIndex = 0;
-
-const writeLoop = async () => {
+} 
+const writePhraseLoop = async (el, phrases) => {
+    let sleepTime = 100;
+    let currPhraseIndex = 0;
     while(true){
         let currWord = phrases[currPhraseIndex % phrases.length];
 
@@ -26,4 +21,3 @@ const writeLoop = async () => {
         currPhraseIndex += 1
     }
 }
-writeLoop();

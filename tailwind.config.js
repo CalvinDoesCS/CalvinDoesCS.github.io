@@ -30,6 +30,10 @@ module.exports = {
         roboto: ['Roboto', ...defaultTheme.fontFamily.sans]
       },
       keyframes: {
+        slide_up: {
+          '0%': { transform: 'translateY(300%)'},
+          '100%': { transform: 'translateY(0)' },
+        },
         slide_down: {
           '0%': { transform: 'translateY(-300%)'},
           '100%': { transform: 'translateY(0)' },
@@ -58,8 +62,17 @@ module.exports = {
           "0%": { opacity: "1" },
           "100%": { opacity: "0" },
         },
+        mouse: {
+          "0%":{
+            opacity: "1", top: "20px"
+          },
+          "100%":{
+            opacity: "0", top: "100px"
+          }
+        }
       },
       animation: {
+        'slide_up': 'slide_up 2s linear 1',
         'slide_down': 'slide_down 2s linear 1',
         'slide_right': 'slide_right 2s linear 1',
         'slide_left': 'slide_left 2s linear 1',
@@ -67,6 +80,7 @@ module.exports = {
         'slide_right2': 'slide_right2 2s ease-out 1',
         'fadeIn': "fadeIn 1s ease-in-out forwards",
         'fadeOut': "fadeOut 1s ease-in-out forwards",
+        "mouse": "mouse 3s ease-in-out infinite",
       },
 
     },

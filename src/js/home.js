@@ -50,6 +50,29 @@ window.onload = async () => {
 
     });
 
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+        effect: 'coverflow',
+        centeredSlides:true,
+        coverflowEffect:{
+            rotate: 0,
+            stretch: 80,
+            depth: 350,
+            modifier: 1,
+            slideShadows: true,
+        },
+        spaceBetween: 100,
 
+        pagination: {
+            el: '.swiper-pagination',
+          },
+          
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+    });
 
 }

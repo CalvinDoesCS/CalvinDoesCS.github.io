@@ -11,7 +11,7 @@
     <link rel="manifest" href="./public/favicon_package_v0.16/site.webmanifest" />
     <link rel="mask-icon" href="./public/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#09090b" />
 
     <!-- Import Styles Vanilla and TailwindCSS -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -21,11 +21,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet" />
+
+    <!-- Import External Scripts & CSS -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="./js/particleBg.js"></script>
     <script src="./js/animationTyper.js"></script>
     <script src="./js/home.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
 </head>
 
 <body class="relative min-h-screen p-0 m-0 mx-auto overflow-x-hidden dark:bg-zinc-950">
@@ -144,7 +149,7 @@
                 </div>
             </div>
         </section>
-        <section id="experience" class="container w-full mt-10 md:mt-0">
+        <section id="experience" class="w-full mt-10 md:mt-0">
             <h1 class="text-5xl font-bold text-center text-white underline">Work Experience</h1>
             <div class="relative h-full p-10 overflow-hidden wrap">
                 <div class="absolute h-full border border-2-2 border-yellow-555"
@@ -181,7 +186,7 @@
             </div>
         </section>
         <section id="education" class="mt-20 min-h-fit">
-            <h1 class="text-5xl font-bold text-center text-white underline">Formal Education</h1>
+            <h1>Formal Education</h1>
             <div class="flex flex-col items-center justify-center gap-10 mt-10">
                 <div class="eduCard">
                     <div>
@@ -331,7 +336,7 @@
             </div>
         </section>
         <section id="certification" class="container mx-auto my-2 mt-36 min-h-fit">
-            <h1 class="text-5xl font-bold text-center text-white underline">Certifications</h1>
+            <h1>Certifications</h1>
             <p class="w-3/4 mx-auto mt-5 text-gray-300 text-md">* This certification is part of my personal journey to
                 continuously expand my skill set. While I have earned these certifications, my primary goal is to deepen
                 my understanding and hands-on experience in these areas, rather than simply accumulating qualifications.
@@ -356,7 +361,8 @@
                             onclick="selectButton('cloud')">Cloud</button>
                     </li>
                 </ul>
-                <div id="certification-container" class="grid grid-cols-1 gap-10 mt-10 lg:grid-cols-2 xl:grid-cols-3 min-h-fit">
+                <div id="certification-container"
+                    class="grid grid-cols-1 gap-10 mt-10 lg:grid-cols-2 xl:grid-cols-3 min-h-fit">
                     <div class="w-[400px] h-[250px] frontend all">
                         <img src="./public/assets/certifications/reactcert1-mosh-calvin.png"
                             class="w-full h-full object-fit rounded-xl"
@@ -374,6 +380,161 @@
                             class="w-full h-full object-fit rounded-xl" alt="Udemy Spring Certification For Calvin">
                     </div>
                 </div>
+            </div>
+        </section>
+        <section id="skills" class="container mx-auto mt-20">
+            <h1>Skills</h1>
+            <div class="grid grid-cols-1 gap-10 py-10 md:grid-cols-2 xl:grid-cols-3">
+                <div class="card">
+                    <h2> Proficient </h2>
+                    <div>
+                        <div>
+                            <img src="https://skillicons.dev/icons?i=java" alt="java logo">
+                            <h3>Java</h3>
+                        </div>
+                        <div>
+                            <img src="https://skillicons.dev/icons?i=react" alt="react logo">
+                            <h3>React</h3>
+                        </div>
+                        <div>
+                            <img src="https://skillicons.dev/icons?i=tailwind" alt="tailwindcss logo">
+                            <h3>TailwindCSS</h3>
+                        </div>
+                        <div>
+                            <img src="https://skillicons.dev/icons?i=mysql" alt="mysql logo">
+                            <h3>MySQL</h3>
+                        </div>
+
+                        <div>
+                            <img src="https://skillicons.dev/icons?i=html,css"
+                                alt="Html and CSS logo next to each other">
+                            <h3>HTML/CSS</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2> Familiar </h2>
+                    <div>
+                        <div>
+                            <img src="https://skillicons.dev/icons?i=javascript,typescript">
+                            <h3>JS/TS</h3>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/?size=100&id=r9QJ0VFFrn7T&format=png&color=000000">
+                            <h3>CharkaUI</h3>
+                        </div>
+                        <div>
+                            <img src="https://skillicons.dev/icons?i=python">
+                            <h3>Python</h3>
+                        </div>
+                        <div>
+                            <img src="https://skillicons.dev/icons?i=bootstrap">
+                            <h3>Bootstrap</h3>
+                        </div>
+                        <div>
+                            <img src="https://skillicons.dev/icons?i=spring">
+                            <h3>SpringBoot</h3>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/?size=100&id=7ImWFDcPfSlz&format=png&color=000000">
+                            <h3>Expo</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Limited</h2>
+                    <div>
+                        <div>
+                            <img src="https://img.icons8.com/?size=100&id=xSkewUSqtErH&format=png&color=000000s"
+                                alt="Pandas logo">
+                            <h3>Pandas</h3>
+                        </div>
+                        <div>
+                            <img src="https://skillicons.dev/icons?i=jquery" alt="Jquery logo">
+                            <h3>Jquery</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card xl:col-start-2">
+                    <h2>Cloud & CI/CD & VCS </h2>
+                    <div>
+                        <div>
+                            <img src="https://skillicons.dev/icons?i=docker" alt="docker logo">
+                            <h3>Docker</h3>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/?size=100&id=WHRLQdbEXQ16&format=png&color=000000"
+                                alt="google logo">
+                            <h3>Google</h3>
+                        </div>
+                        <div>
+                            <img src="https://skillicons.dev/icons?i=git" alt="git logo">
+                            <h3>Git</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="container min-h-screen mx-auto">
+            <h1>Personal Projects</h1>
+            <div class="swiper" style="--swiper-pagination-color: #93c5fd;
+                --swiper-pagination-bullet-inactive-color : #999999;
+                --swiper-pagination-bullet-inactive-opacity: 1;
+                --swiper-pagination-bullet-size:16px;
+                --swiper-pagination-bullet-horizontal-gap:6px;
+                --swiper-navigation-color: #93c5fd;">
+                <div class=" swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://raw.githubusercontent.com/CalvinDoesCS/CalorieTracker/main/CalorieTracker.png"
+                            alt="Calorie Tracker App Image Showing Food Log">
+                        <div>
+                            <h2> Calorie Tracker</h2>
+                            <div class="card-buttons">
+                                <div>React.ts</div>
+                                <div>Springboot</div>
+                                <div>MySQL</div>
+                                <div>JWT</div>
+                                <div>CharkaUI</div>
+                                <div>Axios</div>
+                                <div>Zustand</div>
+                                <div>CRUD</div>
+                                <div>JPA&Hibernate</div>
+                                <div>React Hook Forms</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/assets/projects/game_hub.png" alt="Game Hub Show Games">
+                        <div>
+                            <h2> Game Hub</h2>
+                            <div class="card-buttons">
+                                <div>React.ts</div>
+                                <div>Charka UI</div>
+                                <div>React Query</div>
+                                <div>Axios</div>
+                                <div>React Router DOM</div>
+                                <div>Zustand</div>
+                                <div>Filtering Logic </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/assets/projects/visual_sorter.png" alt="Visual Soring">
+                        <div>
+                            <h2> Visual Sorter in Java</h2>
+                            <div class="card-buttons">
+                                <div>Java</div>
+                                <div>Java FX Library</div>
+                                <div>Sorting Algorithms</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" swiper-pagination"></div>
+
+                <div class="swiper-button-prev "></div>
+                <div class="swiper-button-next "></div>
             </div>
         </section>
     </main>

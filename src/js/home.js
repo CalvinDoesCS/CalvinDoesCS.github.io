@@ -1,3 +1,27 @@
+function selectButton(selected) {
+    // Reset all buttons to default state
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(button => {
+        button.classList.remove('bg-blue-500'); // Remove selected background color
+        button.classList.add('bg-zinc-800'); // Reset background to default
+    });
+
+    // Add selected style to clicked button
+    const selectedButton = document.getElementById(`${selected}Btn`);
+    selectedButton.classList.add('bg-blue-500'); // Change background color for selected button
+
+    // Hide all content sections
+    const allContentSections = document.querySelectorAll('#content div');
+    allContentSections.forEach(content => content.classList.add('hidden'));
+
+    // Show the content for the selected button
+    const selectedContent = Array.from(document.getElementsByClassName(selected));
+    console.log(selectedContent);
+    selectedContent.forEach((content) => {
+        content.classList.remove('hidden');
+    })
+}
+
 window.onload = async () => {
 
     // Job Phrase Loop
@@ -19,9 +43,11 @@ window.onload = async () => {
         const yPercentage = yPosition / windowHeight;
         let navCirclePosition = navLineHeight * yPercentage;
 
-        console.log("%d, %d, %f", yPosition, windowHeight,  yPercentage)
+
         navCircle.style.transform = `translateY(${navCircleStartPos + navCirclePosition}px) translateX(-50%)`;
 
     });
+
+
 
 }

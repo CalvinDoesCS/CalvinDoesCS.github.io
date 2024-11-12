@@ -52,19 +52,17 @@ window.onload = async () => {
 
     const swiper = new Swiper('.swiper', {
         // Optional parameters
-        direction: 'horizontal',
-        loop: false,
-        effect: 'coverflow',
-        centeredSlides:true,
-        coverflowEffect:{
-            rotate: 0,
-            stretch: 80,
-            depth: 350,
-            modifier: 1,
-            slideShadows: true,
+        effect: "coverflow",
+        grabCursor: false,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 20,
+          stretch: 20,
+          depth: 100,
+          modifier: 2.5,
+          slideShadows: true,
         },
-        spaceBetween: 100,
-
         pagination: {
             el: '.swiper-pagination',
           },

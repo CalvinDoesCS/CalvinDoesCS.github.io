@@ -1,24 +1,26 @@
 function selectButton(selected) {
-    // Reset all buttons to default state
-    const buttons = document.querySelectorAll('button');
+    const buttons = document.querySelectorAll('#certification li button');
+    const selectedButton = document.getElementById(`${selected}Btn`);
     buttons.forEach(button => {
-        button.classList.remove('bg-blue-500'); // Remove selected background color
-        button.classList.add('bg-zinc-800'); // Reset background to default
+        if(button.id === selectedButton.id){
+            selectedButton.classList.remove('bg-zinc-800');
+            selectedButton.classList.add('bg-blue-500');
+        }else{
+            button.classList.remove('bg-blue-500');
+            button.classList.add('bg-zinc-800');
+        }
     });
 
-    // Add selected style to clicked button
-    const selectedButton = document.getElementById(`${selected}Btn`);
-    selectedButton.classList.add('bg-blue-500'); // Change background color for selected button
-
-    // Hide all content sections
-    const allContentSections = document.querySelectorAll('#content div');
-    allContentSections.forEach(content => content.classList.add('hidden'));
-
-    // Show the content for the selected button
-    const selectedContent = Array.from(document.getElementsByClassName(selected));
-    console.log(selectedContent);
-    selectedContent.forEach((content) => {
-        content.classList.remove('hidden');
+    const set = new Set(Array.from(document.getElementsByClassName(selected)));
+    // Show or Hide Certification based on selected
+    const allContentSections = document.querySelectorAll('#certification-container div');
+    allContentSections.forEach(content => {
+        if(set.has(content)){
+            content.classList.remove('hidden');
+            content.classList.add('block');
+        }else{
+            content.classList.add('hidden');
+        }
     })
 }
 

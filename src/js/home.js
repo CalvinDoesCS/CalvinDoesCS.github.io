@@ -4,9 +4,9 @@ function selectButton(selected) {
     buttons.forEach(button => {
         if(button.id === selectedButton.id){
             selectedButton.classList.remove('bg-zinc-800');
-            selectedButton.classList.add('bg-blue-500');
+            selectedButton.classList.add('bg-blue-300');
         }else{
-            button.classList.remove('bg-blue-500');
+            button.classList.remove('bg-blue-300');
             button.classList.add('bg-zinc-800');
         }
     });

@@ -31,6 +31,7 @@
     <script src="./js/animationTyper.js"></script>
     <script src="./js/home.js"></script>
 
+
 </head>
 
 <body class="relative min-h-screen dark:bg-zinc-950">
@@ -129,7 +130,7 @@
                     <h2 class="mt-4 font-bold text-2l lg:text-3xl">I'm Calvin</h2>
                     <h2 class="mt-1 text-lg lg:text-xl">Current Role: <span class="font-bold">Part-Time Java Software
                             Developer</span></h2>
-                    <p class="mt-4 mb-4 text-sm lg:text-md">
+                    <p class="mt-4 mb-4 text-sm lg:text-base">
                         I am a Software Engineer with a strong background in Computer Science and a passion for coding.
                         My journey in software development has exposed me to a wide range of technologies, and I’ve
                         gained hands-on experience building full-stack applications with React, Spring Boot, and MySQL.
@@ -139,9 +140,9 @@
                         a solid foundation in Computer Science and a love for problem-solving, I am always eager to
                         contribute to impactful projects and continue advancing in the field of software engineering.
                     </p>
-                    <a class="text-md lg:text-lg" href="mailto:CalvinNTran.cs@gmail.com"> Email:
+                    <a class="text-base lg:text-lg" href="mailto:CalvinNTran.cs@gmail.com"> Email:
                         CalvinNTran.cs@gmail.com</a>
-                    <p class="text-md lg:text-lg">Location: Atlanta, Georgia</p>
+                    <p class="text-base lg:text-lg">Location: Atlanta, Georgia</p>
                     <button
                         class="w-32 px-4 py-2 mt-5 text-lg bg-blue-300 shadow-md text-zinc-950 rounded-xl shadow-black ">
                         Resume
@@ -337,7 +338,7 @@
         </section>
         <section id="certification" class="container mx-auto my-2 mt-36 min-h-fit ">
             <h1>Certifications</h1>
-            <p class="w-3/4 mx-auto mt-5 text-gray-300 text-md">* This certification is part of my personal journey to
+            <p class="w-3/4 mx-auto mt-5 text-base text-gray-300">* This certification is part of my personal journey to
                 continuously expand my skill set. While I have earned these certifications, my primary goal is to deepen
                 my understanding and hands-on experience in these areas, rather than simply accumulating qualifications.
                 I believe that learning through practice is the best way to stay up to date with emerging technologies
@@ -345,7 +346,7 @@
             <div class="flex flex-col items-center p-8 mt-5 shadow-xl shadow-blue-300 bg-zinc-900 rounded-2xl h-fit">
                 <ul class="flex flex-row gap-2 text-2xl text-white">
                     <li>
-                        <button id="allBtn" class="px-6 py-2 text-white bg-blue-500"
+                        <button id="allBtn" class="px-6 py-2 text-white bg-blue-300"
                             onclick="selectButton('all')">All</button>
                     </li>
                     <li>
@@ -382,7 +383,7 @@
                 </div>
             </div>
         </section>
-        <section id="skills" class="container mx-auto mt-20 ">
+        <section id="skills" class="container min-h-screen mx-auto mt-20">
             <h1>Skills</h1>
             <div class="grid grid-cols-1 gap-10 py-10 md:grid-cols-2 xl:grid-cols-3">
                 <div class="card">
@@ -477,14 +478,14 @@
         </section>
         <section id="projects" class="min-h-screen">
             <h1>Personal Projects</h1>
-            <div class="swiper" style="--swiper-pagination-color: #93c5fd;
+            <div class="swiper" style="--swiper-pagination-color: hsl(211, 84%, 81%);
                 --swiper-pagination-bullet-inactive-color : #999999;
                 --swiper-pagination-bullet-inactive-opacity: 1;
                 --swiper-pagination-bullet-size:16px;
                 --swiper-pagination-bullet-horizontal-gap:6px;
-                --swiper-navigation-color: #93c5fd;">
+                --swiper-navigation-color: #f8f8f8;">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide ">
                         <img src="https://raw.githubusercontent.com/CalvinDoesCS/CalorieTracker/main/CalorieTracker.png"
                             alt="Calorie Tracker App Image Showing Food Log">
                         <div>
@@ -529,13 +530,38 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
 
-                <div class=" swiper-pagination"></div>
+                <div class="swiper-pagination"></div>
 
                 <div class="swiper-button-prev "></div>
                 <div class="swiper-button-next "></div>
             </div>
+            <style>
+                .swiper-slide-active {
+                    box-shadow: 0px 20px 40px rgb(147, 197, 253, 1)
+                }
+
+                .swiper-slide {
+                    height: 96%;
+                }
+
+                .swiper-pagination {
+
+                    transform: translateY(-20px);
+                }
+
+                .swiper-pagination-bullet-active {
+                    width: 40px;
+                }
+
+                .swiper-button-next:hover,
+                .swiper-button-prev:hover {
+                    background-color: #87d4f2;
+
+                }
+            </style>
         </section>
     </main>
 </body>

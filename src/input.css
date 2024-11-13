@@ -66,26 +66,30 @@
     @apply text-2xl font-bold text-center text-white;
   }
 
-  /* Projects  */
+  /* Swiper Container */
   .swiper {
-    @apply mt-10 bg-zinc-900 rounded-xl;
+    @apply w-[90%] lg:w-3/4 mt-10 rounded-xl lg:h-[600px] h-[800px];
   }
+  .swiper-wrapper {
+    @apply max-w-3xl;
+  }
+  /* Swiper Slide */
   .swiper-slide {
-    @apply text-2xl text-center text-white;
+    @apply flex flex-col rounded-lg bg-zinc-900;
   }
   .swiper-slide img {
-    @apply w-full rounded-t-xl;
+    @apply object-cover w-full h-2/3 rounded-t-xl;
   }
   .swiper-slide > div {
-    @apply flex flex-row w-full mb-7;
+    @apply flex flex-row items-center w-full mb-7 h-1/3;
   }
   .swiper-slide h2 {
-    @apply ml-2 text-xl font-bold text-center basis-1/3;
+    @apply ml-2 text-xl font-bold text-center text-white basis-1/3;
   }
   .swiper-slide .card-buttons {
-    @apply flex flex-wrap gap-1 basis-2/3;
+    @apply flex flex-wrap gap-1 py-2 basis-2/3;
   }
   .swiper-slide .card-buttons > div {
-    @apply px-2 py-1 rounded-full cursor-pointer text-whiteite text-md bg-gradient-to-tr from-blue-300 to-teal-700;
+    @apply px-2 py-1 text-lg text-white rounded-full cursor-pointer bg-gradient-to-tr from-blue-300 to-teal-700;
   }
 }

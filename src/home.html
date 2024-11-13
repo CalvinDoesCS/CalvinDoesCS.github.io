@@ -476,9 +476,9 @@
                 </div>
             </div>
         </section>
-        <section id="projects" class="min-h-screen">
+        <section id="projects" class="py-20 min-h-fit">
             <h1>Personal Projects</h1>
-            <div class="swiper" style="--swiper-pagination-color: hsl(211, 84%, 81%);
+            <div class=" swiper" style="--swiper-pagination-color: hsl(211, 84%, 81%);
                 --swiper-pagination-bullet-inactive-color : #999999;
                 --swiper-pagination-bullet-inactive-opacity: 1;
                 --swiper-pagination-bullet-size:16px;
@@ -563,6 +563,48 @@
                 }
             </style>
         </section>
+        <section id="contact" class="my-20">
+            <h1>
+                Contact Me
+            </h1>
+            <div class="max-w-4xl mx-10 lg:mx-auto">
+                <div class="p-8 my-4 shadow-2xl bg-zinc-900 rounded-2xl">
+                    <div class="flex">
+                        <h1 class="text-5xl font-bold text-white uppercase">
+                            Send me a
+                            <br />
+                            message
+                        </h1>
+                    </div>
+                    <form action="https://formspree.io/f/xpzvdwby" method="POST">
+                        <div class="grid grid-cols-1 gap-5 mt-5 md:grid-cols-2">
+                            <input
+                                class="w-full p-3 mt-2 text-white bg-gray-800 rounded-lg focus:outline-none focus:shadow-outline"
+                                type="text" placeholder="First Name*" name="first-name" required />
+                            <input
+                                class="w-full p-3 mt-2 text-white bg-gray-800 rounded-lg focus:outline-none focus:shadow-outline"
+                                type="text" placeholder="Last Name*" name="last-name" required />
+                            <input
+                                class="w-full p-3 mt-2 text-white bg-gray-800 rounded-lg focus:outline-none focus:shadow-outline"
+                                type="email" placeholder="Email*" name="email" required />
+                            <input
+                                class="w-full p-3 mt-2 text-white bg-gray-800 rounded-lg focus:outline-none focus:shadow-outline"
+                                type="text" placeholder="Phone*" name="phone" required />
+                        </div>
+                        <div class="my-4">
+                            <textarea placeholder="Message*" name="message"
+                                class="w-full h-32 p-3 mt-2 text-white bg-gray-800 rounded-lg focus:outline-none focus:shadow-outline"
+                                required></textarea>
+                        </div>
+                        <div class="w-1/2 my-2 lg:w-1/4">
+                            <button type="submit"
+                                class="w-full p-3 text-sm font-bold tracking-wide text-gray-100 uppercase bg-blue-800 rounded-lg focus:outline-none focus:shadow-outline hover:bg-blue-700">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
     </main>
 </body>
 
